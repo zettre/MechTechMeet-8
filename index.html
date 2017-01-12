@@ -567,7 +567,7 @@ nav ul li ul li a {
 
 /* General styles and layout */
 body {
-  background: #000 url(images/bg.png);
+  background: #000 url(images/bg.jpg);
 }
 
 .starwars-demo {
@@ -632,7 +632,7 @@ img {
 #social
 {
 position: fixed;
-bottom: 0;
+bottom: 10px;
 }
 a.btn-social,
 .btn-social
@@ -703,6 +703,7 @@ a.btn-social,
 {
     background-color: #3b5998;
     -webkit-animation-duration: 0.3s;
+    -webkit-animation-delay: 1s;
 }
 .btn-facebook:hover
 {
@@ -712,7 +713,7 @@ a.btn-social,
 {
     background-color: #dd4b39;
     -webkit-animation-duration: 0.3s;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-delay: 2s;
 }
 .btn-google-plus:hover
 {
@@ -722,7 +723,7 @@ a.btn-social,
 {
     background-color: #0976b4;
     -webkit-animation-duration: 0.3s;
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 3s;
 }
 .btn-linkedin:hover
 {
@@ -732,7 +733,7 @@ a.btn-social,
 {
     background-color: #e52d27;
     -webkit-animation-duration: 0.3s;
-    -webkit-animation-delay: 3s;
+    -webkit-animation-delay: 4s;
 }
 .btn-youtube:hover
 {
@@ -745,7 +746,7 @@ a.btn-social,
 <script>
 $(document).ready(function() {  
 	
-	$('#preloader').fadeOut();
+	$('#preloader').delay(2000).fadeOut();
 	$('#content').show();
 	
 
