@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="MechTechMeet, UEC, Ujjain, UECU, Robotics, technical fest, battlefield, robowars, soccer, software, business plan, rubik, cube, tech, college fest,
+  lectures, technology, competitions, events, workshops, exhibitions, science, fest, robotics, delhi, robotics, techfest, college festival, asia's largest, Engineer, mahakal, technovation, Society, cultural, pro night, dj night, dj, march, 3, 4" />
+  <meta name="description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'. It is a place where innovation origins. We provide a platform for technically sound people" />
+    <meta property="og:title" content="MechTechMeet 8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mechtechmeet.org/" />
+  <meta property="og:site_name" content="MechTechMeet 8" />
+  <meta property="og:description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'" />
+  <meta property=og:image content=http://mechtechmeet.org/images/mtm.jpg>
+
+
+  <title>Mech Challenge</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<script src="js/demoad.js"></script>
+<style>
+body
+{
+  background-image: url(images/bg.jpg);
+  background-color: transparent;
+}
+li
+{
+  font-weight: bold;
+  color: #ffffff;
+}
+.hover:hover
+{
+background: #179b77;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+#preloader 
+{ 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333 
+  no-repeat center center; 
+}
+.transition, .accordp, .accordul li i:before, .accordul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, .accordh1, .accordul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, .accordh2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.accordh1 {
+  color: #ff6873;
+}
+.accordh2 {
+  color: #ff6873;
+}
+
+.accordh1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.accordh2 {
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.accordp {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 1200px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  font-weight: normal;
+}
+
+.accordul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accordul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+.accordul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accordul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accordul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accordul li:nth-of-type(4) {
+  animation-delay: 1.25s;
+}
+.accordul li:last-of-type {
+  padding-bottom: 0;
+}
+.accordul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accordul li i:before, .accordul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+.accordul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accordul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accordul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.accordul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accordul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+.pdf
+{
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+  float: right; 
+  text-decoration: none;
+  height: 48px;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: transparent;
+    
+    color: #ffffff;
+    
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+    background: #179b77;
+
+}
+.modalImage {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+<script>
+$(document).ready(function(){
+    $('#myBtn1').click(function(){
+  $('#myModalImage1').show();
+});
+  $('#close1').click(function(){
+    $('#myModalImage1').hide();
+  });
+    $('#myBtn2').click(function(){
+  $('#myModalImage2').show();
+});
+  $('#close2').click(function(){
+    $('#myModalImage2').hide();
+  });
+
+
+});
+
+</script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91080720-1', 'auto');
+  ga('send', 'pageview');
+
+</script> 
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></img></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav ">
+            <li class="hover"><a style="font-size: 15px;" href="index.html">Home</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="about.html">About</a></li>
+            
+            <li class="dropdown hover">
+          <a href="events.html" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 15px;"> Events</a>
+          <ul class="dropdown-menu">
+            <li><a style="font-size: 15px; font-weight: bold;" href="event1.html">Robo Club</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event2.html">Mech Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event3.html">Mind Stimulators</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event4.html">Computer Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event5.html">SCDC</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event6.html">Online Events</a></li>
+            
+          </ul>
+        </li>
+
+
+
+
+            <li class="hover"><a style="font-size: 15px;" href="workshop.html">Workshop</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="technovator.html">Technovator</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="initiatives.html">Initiatives</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="sponsors.html">Sponsors</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="team.html" target="_blank">Team</a></li>
+            
+          </ul>
+          <form class="navbar-form navbar-right" action="register.html">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>    
+    <br>
+    <br><br><br><br>
+<div class="container demo-3">
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8"><h3 style="color: #ff6873; text-align: center;">Are you Ready For The Challenge?</h3><h4 style="color: #ffffff; text-align: center;">Come, be part of the most exciting Tech-Fest in Central India!</h4></div>
+<div class="col-sm-2"><img class="img-responsive pull-right" src="images/stamp.png"></div>
+</div>
+
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">Bottle Rocket <a class="pdf" href="pdf/bottlerocket.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">Bottle rocket is a dynamic event in which the pressurized air-water mixture carried by the bottle will take it to sky. Pressurized air-water mixture, in which air provides the compression space and water provides the required thrust, makes pressurized air-water mixture one of the best green fluids. So, let’s check out the difference in dimension of creativity, robustness and accuracy to reach the maximum distance. 
+Design a rocket carrying a bottle, partially filled with water will act as a fuel tank. Air-water need to be pressurized in manner to provide thrust for the rocket to move maximum horizontal distance.<br><b style="color: #ff6873;">Problem Statement :-</b><br>
+Your rocket will rest at zero level line, where you will feed the required amount of water in bottle and pressurize it to a certain level. A manually operated pressure pump will be provided so; bottle must carry the pressure valve nozzle. You need to pressurize the feed and launch your rocket to make it reach the maximum distance in designed angular field. Pump your rocket to reach the maximum distance. 
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1. Fuels other than water and air are strictly prohibited. <br>
+2. Use of chemicals in any form is strictly prohibited. <br>
+3. Energy supplying or energy converting source like motors, batteries will lead to the disqualification. <br>
+4. Energy storing source is also restricted. <br>
+5. Use of volatile substance will not be entertained in any manner.<br>
+6. The complete rocket should fit in a box of 45*45*45 cm at any point of time during event. <br>
+7. Rocket without water should not exceed 2kgs. Each participating team will be provided with 1 litre of water to use it as a fuel. Proper proportion of air, water, pressure is to be maintained by team within 30 seconds to make their rocket win. <br>
+8. Launch time will be 30 seconds to fix the knob, pressurizing the fuel and launching. Water feeding of bottle will not be counted in 30 seconds. Only single chance will be given to teams to launch their rocket. <br>
+9. Manually operated hand or leg pressure pump will not be provided by event co-ordinator <br>
+10. Dismantling of any part of the rocket during the run will lead to disqualification.<br>
+11. The Rocket will have to fly maximum final horizontal distance to be the winner. <br>
+12. Team structure: <br>
+A team can have maximum of 3 members. <br>
+Students from different semesters, branches and college may participate together as a team.<br>
+ 
+<b>Note:</b> In any case of disputes or offences, event coordinator holds the right to decide and judge the situation and his/her decision will be the final. 
+
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">Maximum horizontal distance will be measured which is travelled by rocket from its starting point, this distance will measured in a straight line and the deviation from straight line is subtracted from total horizontal distance travel by it. <br>
+X – (0.3)* Y =final horizontal distance <br>
+X = horizontal distance travel from start point. <br>
+Y =deviation from straight path. 
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Shubham Malviya  +91-9479435156<br>
+Rishabh Pagaria  +91-9575989999<br>
+Mayank Jain  +91-9424958367<br>
+Gourav Kotriwar  +91-7089672744<br>
+</p>
+  </li>
+</ul>
+</div>
+<div class="col-lg-6">
+     <h1 class="accordh1">Hover Sprint<a class="pdf" href="pdf/hovercraft.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">HOVERCRAFT is an air-cushion craft which is capable of travelling over surfaces. It should produce a cushion of high pressurized air and propels itself on this air cushion using a thrust producing mechanism.
+<br>
+<b style="color: #ff6873;">Problem Statement :-</b><br>
+Each team has to design and fabricate a lightweight and easily manoeuvrable hovercraft which must be quick and strong enough to push objects.
+
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1. The overall craft dimensions must not exceed 50 cmX50cmX50cm.<br>
+2. Hovercraft can be fabricated using foam, wood, coroplast (sunpack) or any other material which do not damage the arena.<br>
+3. Control is generally achieved by the use of rudders, though it’s not a only solution.<br>
+4. Participants must make all parts of craft themselves.<br>
+5. Usage of readymade kit is strictly prohibited. Use of readymade motors/actuators and remote controls is allowed.<br>
+6. Use of IC engines is prohibited. Only electrical motors are allowed.<br>
+7. In case of damage to craft small modification time will be provided. <br>
+8. A team should not have more than three students.<br>
+9. Team members should be of same institution.<br>
+10. All team members should have a valid identity card of their respective institutions.<br>
+11. COORDINATOR’S DECISION WILL BE FINAL.<br>
+12. Human interference is strictly prohibited.<br>  
+
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">The event comprises of two rounds.<br>
+<b style="color: #ff6873;">Round 1 :-</b><br>
+1. Each team has to complete a given path in minimum time.<br>
+2. Stability of hovercraft and operator’s skills will be checked.<br>
+3. Hovercraft should not touch the walls otherwise penalty of 10 seconds will be charged.<br><button id="myBtn1"><b style="color: #ff6873;">Round 1 Arena</b></button><br>
+      <b> Top teams will be promoted to the round 2. </b><br>
+<b style="color: #ff6873;">Round 2 :-</b><br>
+1. In this round hovercraft have to push objects into their respective goals in minimum time.<br>
+2. “Maximum goals in Minimum time” will be the winning criteria.<br>
+<button id="myBtn2"><b style="color: #ff6873;">Round 2 Arena</b></button>
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Abhay Rahangdale  +91-9179689714<br>
+Arvind Patidar  +91-8959896981<br>
+Dhruv Patidar  +91-8989620041<br>
+</p>
+  </li>
+
+</ul>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">Auto Quiz<a class="pdf" href="pdf/autoquiz.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">MTM Auto Quiz flags off the 8th season of region’s finest auto quiz. A quiz that will have auto enthusiasts from every background, from across the state reviving up to overtake each other to be crowned the ultimate king of auto. To sum up, for an Auto lover, MTM Auto Quiz is more than just a platform it's a destination.
+MTM Auto Quiz has been engaging auto enthusiasts from the engineering fraternity for the past five years. Through this time, it has established its position as region’s largest automotive quiz for students to showcase their passion about the world of automobiles. MTM Auto Quiz is a step towards inculcating this passion for auto that recognizes and develops young talent in the auto field.
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1.Use of mobile phones or any other electronic devices during the quiz is strictly prohibited.<br>
+2.Anyone found using any device to access the internet will be disqualified.<br>
+3.Any kind of malpractice will not be tolerated.<br>
+4.Any student with a valid identity card of a higher education institute is eligible to participate. Students are advised to bring it at venue at time of registration, and at the event.
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">
+    Each individual should register his/her name in the registration section. Participants can also register at the venue on the day of the event. Applicant has to pay a sum of 50 as a registration fee.<br>
+The event will consist of two rounds.<br>
+<b style="color: #ff6873;">Preliminary Round :-</b><br>
+1. It will be a written round.<br>
+2. Each candidate will be provided with a question set containing 75 questions consisting of multiple choices (MCQs). Each question will carry 1 mark each.<br>
+3. There will be no negative marking.<br>
+4. There will be certain star marked questions which will carry more weightage in marking and serve as tiebreaker.<br>
+5. Time duration: 45min<br>
+
+<b style="color: #ff6873;">Final Round :-</b><br>
+1. It will also be a written round.<br>
+2. Each candidate will be provided with a question set containing 50 questions consisting of multiple choices (MCQs).<br>
+3. Students will be awarded 3 marks for each correct answer. Each wrong answer will cost a negative mark (1).<br>
+4. Questions are from different categories based on automobile technologies.<br>
+5. The entire qualified student from preliminary round will be provided Certificates.<br>
+6. Candidate scoring highest mark will be announced as a winner.<br>
+7. Time duration :45 min<br>
+<b style="color: #ff6873;">Winning Criteria :-</b><br>
+The total score of the candidate at the end of two rounds will be used to decide the winner. The top two scorers will be awarded.
+
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">HImanshu Vishwakarma  +91-7415692541<br>
+Pranjal Shakalya  +91-8989670473<br>
+Aman Kushwaha  +91-8370046956<br>
+</p>
+  </li>
+
+</ul>
+</div>
+<div class="col-lg-6">
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+<div id="myModalImage1" class="modalImage">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close1">&times;</span>
+    <img src="images/hovercraftround1.jpg" class="img-responsive"></img>
+  </div>
+
+</div><div id="myModalImage2" class="modalImage">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close2">&times;</span>
+    <img src="images/hovercraftround2.jpg" class="img-responsive"></img>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="MechTechMeet, UEC, Ujjain, UECU, Robotics, technical fest, battlefield, robowars, soccer, software, business plan, rubik, cube, tech, college fest,
+  lectures, technology, competitions, events, workshops, exhibitions, science, fest, robotics, delhi, robotics, techfest, college festival, asia's largest, Engineer, mahakal, technovation, Society, cultural, pro night, dj night, dj, march, 3, 4" />
+  <meta name="description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'. It is a place where innovation origins. We provide a platform for technically sound people" />
+    <meta property="og:title" content="MechTechMeet 8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mechtechmeet.org/" />
+  <meta property="og:site_name" content="MechTechMeet 8" />
+  <meta property="og:description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'" />
+  <meta property=og:image content=http://mechtechmeet.org/images/mtm.jpg>
+
+
+  <title>Robo Club</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><style>
+body
+{
+  background-image: url(images/bg.jpg);
+  background-color: transparent;
+}
+li
+{
+  font-weight: bold;
+  color: #ffffff;
+}
+.hover:hover
+{
+background: #179b77;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+#preloader 
+{ 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333 
+  no-repeat center center; 
+}
+.transition, .accordp, .accordul li i:before, .accordul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, .accordh1, .accordul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, .accordh2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.accordh1 {
+  color: #ff6873;
+}
+.accordh2 {
+  color: #ff6873;
+}
+
+.accordh1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.accordh2 {
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.accordp {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 1220px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  font-weight: normal;
+}
+
+.accordul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accordul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+.accordul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accordul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accordul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accordul li:nth-of-type(4) {
+  animation-delay: 1.25s;
+}
+.accordul li:last-of-type {
+  padding-bottom: 0;
+}
+.accordul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accordul li i:before, .accordul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+.accordul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accordul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accordul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.accordul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accordul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+.pdf
+{
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+  float: right; 
+  text-decoration: none;
+  height: 48px;
+}
+
+
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: transparent;
+    
+    color: #ffffff;
+    
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+    background: #179b77;
+
+}
+.modalImage {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $('#myBtn1').click(function(){
+  $('#myModalImage1').show();
+});
+  $('#close1').click(function(){
+    $('#myModalImage1').hide();
+  });
+   $('#myBtn2').click(function(){
+  $('#myModalImage2').show();
+});
+  $('#close2').click(function(){
+    $('#myModalImage2').hide();
+  });
+  $('#myBtn3').click(function(){
+  $('#myModalImage3').show();
+});
+  $('#close3').click(function(){
+    $('#myModalImage3').hide();
+  });
+  $('#myBtn4').click(function(){
+  $('#myModalImage4').show();
+});
+  $('#close4').click(function(){
+    $('#myModalImage4').hide();
+  });
+});
+
+</script>  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91080720-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></img></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav ">
+            <li class="hover"><a style="font-size: 15px;" href="index.html">Home</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="about.html">About</a></li>
+            
+
+            <li class="dropdown hover">
+          <a href="events.html" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 15px;"> Events</a>
+          <ul class="dropdown-menu">
+            <li><a style="font-size: 15px; font-weight: bold;" href="event1.html">Robo Club</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event2.html">Mech Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event3.html">Mind Stimulators</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event4.html">Computer Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event5.html">SCDC</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event6.html">Online Events</a></li>
+            
+          </ul>
+        </li>
+
+
+            <li class="hover"><a style="font-size: 15px;" href="workshop.html">Workshop</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="technovator.html">Technovator</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="initiatives.html">Initiatives</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="sponsors.html">Sponsors</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="team.html" target="_blank">Team</a></li>
+            
+          </ul>
+          <form class="navbar-form navbar-right" action="register.html">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>    
+    <br>
+    <br><br><br><br>
+<div class="container">
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8"><h3 style="color: #ff6873; text-align: center;">Are you Ready For The Challenge?</h3><h4 style="color: #ffffff; text-align: center;">Come, be part of the most exciting Tech-Fest in Central India!</h4></div>
+<div class="col-sm-2"><img class="img-responsive pull-right" src="images/stamp.png"></div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">Robo Race <a class="pdf" href="pdf/roborace.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">Calling all the speed racing fanatics out there. Put your robots to the ultimate speed and control test. This event gives you the opportunity to test your machine and to vanquish all other opponents. And in the end only fastest and snakiest machines will survive. <br>
+    <b style="color: #ff6873;">Problem Statement :-</b><br>
+    Design and built a manually controlled wired or wireless robot which is capable of completing race successfully in minimum time. 
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp"><b style="color: #ff6873;">Specifications :-</b><br>1. The dimension of robot should not exceed 25x25x20 cm3 (L*B*H), however a tolerance of 5% can be considered in dimension. <br>
+2. The potential difference between any two points on robot must not exceed 24 Volts (no current limit). <br>
+3. Both wired and wireless robots are allowed.<br> 
+4. The bots can have either onboard or off board batteries or AC adaptors. <br>
+<b style="color: #ff6873;">Eligibility :-</b><br>
+1. Students from different institutes can make a team.<br>
+2. All regular students with a valid identity card of their respective educational institutes are eligible to participate in the event.<br>
+<b style="color: #ff6873;">General Rules :-</b><br>
+1. The team should not consist of more than 4 members. <br>
+2. Only AC power source will be provided during the race. <br>
+3. The given specification of the robot must be strictly followed or the team will be disqualified. <br>
+4. Use of LEGO kits is strictly prohibited and using this will lead to disqualification. <br>
+5. Terminals for charging the battery will not be provided in the college. <br>
+6. No practice run will be provided on the main arena. <br>
+7. Participants with wired robots are strictly advised to get wire of length 5 m or more and the wire should remain slack under all circumstances during the competition. <br>
+8. Decision of the event coordinator will be treated as final. <br>
+9. The structure of the robot should not be changed during the competition. <br>
+10. If your bot gets dismantle during race then you will be disqualified. <br>
+11. Arena may subject to change before the commencement of any round.<br>
+12. Damaging the arena will leads to disqualification.<br>
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">1. There would be two choices of start point (one start point would be awarded with time bonus of 45sec) which would be declared 1 hour before the event.<br>
+2. If your bot goes off track by any reason, it has to restart from previous hurdle.<br>  3. Only 5 restart will be given to each robot. <br>
+4. Restart from any hurdle will cause 30 sec penalty.<br> 
+4. Omitting any hurdle will cause 2 min penalty (only 3 omits will be allowed). <br>
+5. Completing the task no.1 in the ‘E’ will reduce 30sec (from total time) and on completing task no.2- 45sec will be reduced from your total race time (75sec can be reduced as per your efforts).<br>
+6. Penalty of 5sec would be awarded on displacement of plastic boxes in zig-zag path.<br>
+7. On striking with pendulum once penalty of 5sec would be awarded.<br>
+8. You will be given only 3 chances to attempt any obstacle. <br>
+9. You are free to end the race with any of the finish point but 45sec reduction from total time will be awarded for those who completes with 2nd finish point.<br>
+10. Max 8 min will be given to each bot to complete the track.<br>
+<b style="color: #ff6873;">Winning Criteria :-</b><br>Team which will take the least time to complete the track will be the winning team.<br><button id="myBtn1"><b style="color: #ff6873;">Arena</b></button></p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Pranjal Jain  +91-9806374295<br>
+Ishan Singh  +91-8602244940<br>
+Chitresh Kulhade  +91-9589716149<br>
+</p>
+  </li>
+</ul>
+</div>
+<div class="col-lg-6">
+     <h1 class="accordh1">Robo Soccer<a class="pdf" href="pdf/robosoccer.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">Here comes an event to show your passion of soccer in a technical way. Attend this season of MTM and feel the football fever. Participants are required to build one manually controlled bot capable of playing soccer on arena specially designed for robotic soccer match.<br>
+<b style="color: #ff6873;">Problem Statement :-</b><br>
+                                      
+Goal is to design such a robot which is capable to direct the ball in the goalpost.              
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp"><b style="color: #ff6873;">Bot Specifications :-</b><br>
+      1.Each team is allowed to have only one bot.<br>2.Table tennis ball will be provided for the game play.<br>3.The bot must fit into a cube of (30*30*30) cm all the time. It maynot expand at any time during the match beyond this size even forhitting the ball. Violating this will lead to immediate disqualification.<br>4.The bot should be controlled manually using wired or wirelessremote control.<br>5.The bots can have on board as well as off board battery or ACadaptor.<br>6.The maximum potential difference b/w any two points on the botshould not exceed 24 volts.<br>7.Flippers or dozers can be used in bots with suitable mechanism sothat not to damage the arena.<br>8.Maximum weight of the bot is 5Kg (including battery or adaptor, ifon-board)<br>9.5% tolerance allowed in any one dimension otherwise a penalty willbe awarded to the opponent.<br>
+10.Grabbing the ball is not allowed. So bots should not have anykind of grabbing mechanism.
+<b style="color: #ff6873;">Eligibility :-</b><br>
+All the students with a valid identification card of their respectiveeducational institute are eligible to participate. A team shouldconsist of 2 or 3 members. Students from different educationalinstitute can form a team.<br>
+<b style="color: #ff6873;">General Rules :-</b><br>
+1.Teams will have to report 15 minutes before the beginning of theevent, failing to do so will result in disqualification.<br>2.Ready-made kits are not allowed.<br>3.Each team can take 1 TIMEOUT of 2 minutes during the match.<br>4.In case of any discrepancy, referee’s decision will be final.<br>
+<b style="color: #ff6873;">Disqualification :-</b><br>
+1.If a team violates the bot’s size specifications.<br>2.If a team damages the arena in any way.<br>3.If a team commits the repeated foul.<br>4.If a team’s bot becomes inactive during the match and their timeout is already used.<br>5.If a team fails to report on time.<br>6.If a team tries to intervene the game play without permission of thereferee.<br>7.Arguing with the organizer will lead to immediate disqualification.
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">1.1.5 minute (90 seconds) of setup time will be provided to eachteam for pre-game setup and testing.<br>2.Fixtures will be designed by match refrees.<br>3.First round will be QUALIFYING ROUND. Each match ofqualifying round will consist of 2 halves of 2.5 minutes (150seconds).<br>4.Each match will be a KNOCKOUT match. Winning team willqualify for the next round.<br>5.Further rounds will consist of knockout matches having 2 halves of 3 minutes (180 seconds).<br>6.Total number of rounds will depend upon total number ofparticipating teams.<br>7.Game will start by placing the ball at the centre and bots out ofthe centre circle in their respective halves.<br>8.If there is entanglement between the wires of the bots thenmatch will be restored from the centre without stopping thetime.<br>9.After the first half goals will be swapped.<br>10.In case of a tie, 1.5 minutes (90 seconds) extra time will begiven.<br>11.If there is a tie even after extra time, the winner will bedecided by the penalty shoot-out each team will be given 3penalty strokes and the best will be counted.<br>12.If the ball completely crosses the line then only the goal willbe considered.<br>13.Team who scores the maximum goals would be the winner ofthe match.<br><b style="color: #ff6873;">Fouls :-</b><br>1.Intentionally damaging the opponent’s bot will be counted as fouland free kick will be awarded.<br>2.Intentionally grabbing the ball will be considered as foul, free kickwill be awarded to the opponent.<br>3.Any foul inside D area, penalty will be awarded to the opponent.<br><b style="color: #ff6873;">Free kicks and penalties :-</b><br>
+    1.In free-kick, the bot of the foul committing team would freeze for 5seconds and placed at centre. The ball will be placed at the foulposition and given to opponent.<br>2.In penalty, the bot of the foul committing team will be placed out ofthe arena. The ball will be placed in between centre line and goal posti.e., 75 cm from goal post. The opponent's have to push (throw) theball. Any type of dragging is not allowed, only pushing is allowed otherwise penalty will be cancelled.<br>
+    <b style="color: #ff6873;">Free kicks and penalties :-</b><br>
+    Length of arena = 300 cm    <br>       Breadth of arena = 200 cm <br>
+    <b style="color: #ff6873;">Free kicks and penalties :-</b><br>
+    Length of goal post = 40 cm    <br>       Breadth of goal post = 30 cm<br>
+    <b style="color: #ff6873;">Free kicks and penalties :-</b><br>
+    Length of D = 90 cm       <br>          Breadth of D = 50 cm<br>
+    Hexagonal obstacle = 15 cm * 6 sides
+    <br><button id="myBtn2"><b style="color: #ff6873;">Arena</b></button>
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Sourabh  +91-9406976115<br>
+Suraj Mishra  +91-7415321500<br>
+Abhishek Bharadwaj  +91-8659042421<br>
+Yash Dubey  +91-9753327095<br>
+</p>
+  </li>
+
+</ul>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">Robo Strike<a class="pdf" href="pdf/robostrike.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">It invites you to test your controlling ability. Event will consistof two rounds and the bot having maximum points(round1+round2) will be the winner.<br><b style="color: #ff6873;">Problem Statement :-</b><br>Design and built a manually controlled wired or wireless robowhich would have capability to burst balloons by addingpin(single or multiple pins can be added) “only on one side”of robo.<br>
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp"><b style="color: #ff6873;">Specification :-</b><br>1. The dimension of robot should not exceed 25x25x20 cm3(L*B*H), however the pin attached to the bot should not bemore than “3cm off-bot”.<br>2. The potential difference between any two points on robotmust not exceed 24 Volts (no current limit).<br>3. Both wired & wireless robots are allowed.<br>4. The bots can have either onboard or off board batteries orAC adaptors.<br>5. Use of any hot wire/electric means for bursting balloons isnot permitted.<br>
+    <b style="color: #ff6873;">Eligibiltiy :-</b><br>
+    1. Students from different institutes can make a team.<br>2. All regular students with a valid identity card of theirrespective educational institutes are eligible to participate inthe event.<br>
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp"><b style="color: #ff6873;">Rules for Round 1 :-</b><br>
+    This round consist of four chambers, you have to burst theballoons as specified.<br>1. In the first chamber you have to burst all four balloons, eachballoon will give +5.<br>2. You will be allowed in second chamber only after burstingatleast two balloons.<br>3 .In the second chamber there is a rotating disc in whichbursting red or blue balloon will give +10 and on burstinggreen balloon -10 will be awarded.<br>4. You can enter to the third chamber directly from first but willnot be permitted to return back.<br>5. In the third chamber you have to burst only the greenballoons in the green area by shifting them with you bot whichwill give +20 otherwise bursting in any other area will give no‘+/-‘ points .<br>6. In the third chamber bursting red and blue balloon will give-10.<br>7. Direct entry from 2nd to 4th chamber is allowed but once youentered you can’t return back.<br>8. In the 4th chamber you will be awarded +20 for each greenballoon and -5 for blue/red.<br>9. In the end if you have  finish on the FINISH point you willget +5 .<br>10. Each bot will get only 4min to perform.<br>
+    <button id="myBtn3"><b style="color: #ff6873;">Round 1 Arena </b></button><br>
+    <b style="color: #ff6873;">Rules for Round 2 :-</b><br>1.Two robots will be there in the arena together.<br>2.Two lives will be there of each robot in the form of balloonon their robots (will be stacked with tape).<br>3.Bursting the balloons provided in the opponent’s area willgive you +5.<br>4.After the match you will be awarded with +10 for each lifeon your bot.<br>5.In case of a tie, rematch will occur.<br>6.The robo which will kill the opponent’s bot by burstingtheir lives (balloons) first will be qualified for winningzone.
+    <br><button id="myBtn4"><b style="color: #ff6873;">Round 2 Arena</b></button><br>
+    <b style="color: #ff6873;">Winning Criteria :-</b><br>
+    ng criteriaThe TEAM from the winning teams of second round whosetotal score of Round1+Round 2 will be highest, will be thewinner.(IN CASE OF ANY TIE, REMATCH OF SECOND ROUNDWILL TAKE PLACE)
+
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Taher Ali Badshah  +91-9589999455<br>
+Satyanarayan Shukla  +91-7389528046<br>
+Mehul Bagaria  +91-8085082026<br>
+</p>
+  </li>
+
+</ul>
+</div>
+<div class="col-lg-6">
+     <h1 class="accordh1">Line Follower<a class="pdf" href="pdf/linefollower.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">This event is all about an autonomous bot built by participants, it will be judged on its ability to perform usual task. It tests level of precision in end to end designing and fabrication of the bot and intelligent use of sensors and coding.<br><b style="color: #ff6873;">Problem Statement :-</b><br>In this event the teams have to design a robot, which can follow a specified path in minimum time. Path may contain corners, curves and sharp edges.
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1. Each team can have a maximum of 4 participants.<br>
+2. A team may consist of students from different colleges.<br>
+3. No damage should be made by a bot to the arena or to other team’s bots during the match in any manner.<br>
+4. Penalty of 10 seconds will be charged for bot getting out of the path.<br>
+5. Bots should not be disassembled until the results are declared.<br>
+6. The organizers reserve the right to change the rules as they deem fit.<br>
+7. Coordinator’s decision will be final.
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">1. The robot must fit within a cube of 250X250X250 (lXbXh). Dimensions in mm. <br>
+2. The robot must be stable and able to move on its own. A bot not fulfilling these criteria will be disqualified. <br>
+3. The bots should be able to follow the line according to event specifications.<br>
+4. Each team has to bring its own power supply for its robots. The voltage difference between any two points on the bot must not exceed 24 volts.<br>
+5. Teams are advised to use an on-board power supply. In case they are using external power supply they will be responsible for any problem created by entanglement of wires.<br>
+6. The bot which will follow the complete path in minimum time shall be announced as winner.
+</p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Vedant Vyas  +91-8871687402<br>
+Vishal Prajapati  +91-8602290982<br>
+Nirmal Nema  +91-9039976916<br>
+</p>
+  </li>
+
+</ul>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+<div id="myModalImage1" class="modalImage">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close1">&times;</span>
+    <img src="images/roborace.jpg" class="img-responsive"></img>
+  </div>
+
+</div>
+<div id="myModalImage2" class="modalImage">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close2">&times;</span>
+    <img src="images/robosoccer1.jpg" class="img-responsive"></img>
+  </div>
+
+</div><div id="myModalImage3" class="modalImage">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close3">&times;</span>
+    <img src="images/robostrikeround1.jpg" class="img-responsive"></img>
+  </div>
+
+</div><div id="myModalImage4" class="modalImage">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="close4">&times;</span>
+    <img src="images/robostrikeround2.jpg" class="img-responsive"></img>
+  </div>
+
+</div>
+</body>
+</html>

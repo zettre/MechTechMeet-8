@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Register</title>
+  <meta name="keywords" content="MechTechMeet, UEC, Ujjain, UECU, Robotics, technical fest, battlefield, robowars, soccer, software, business plan, rubik, cube, tech, college fest,
+  lectures, technology, competitions, events, workshops, exhibitions, science, fest, robotics, delhi, robotics, techfest, college festival, Engineer, mahakal, technovation, Society, cultural, pro night, dj night, dj, march, 3, 4" />
+  <meta name="description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'. It is a place where innovation origins. We provide a platform for technically sound people" />
+    <meta property="og:title" content="MechTechMeet 8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mechtechmeet.org/" />
+  <meta property="og:site_name" content="MechTechMeet 8" />
+  <meta property="og:description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'" />
+  <meta property=og:image content=http://mechtechmeet.org/images/mtm.jpg>
 
+  <title>Register</title>
+<link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
@@ -23,6 +33,319 @@ body {
   background-image: url("images/bg.jpg");
 }
 
+
+#letter {
+    font-size: 120px;
+    font-family: Helvetica;
+    font-weight: Bold;
+    color: rgba(18,22,26,0.7);
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    z-index: 100;
+}
+
+#description {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    z-index: 100;
+    font-family: Helvetica;
+    font-weight: 200;
+    color: rgba(18,22,26,0.7);
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#animation {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.2);
+}
+
+.body {
+    position: absolute;
+    animation: body 3s ease-in-out 0s infinite alternate none;
+  -webkit-animation: body 3s ease-in-out 0s infinite alternate none;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+    margin-top: -30px;
+}
+
+.body:before , .body:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+}
+
+.body:before , .body:after , .body .hinge {
+    background-color: rgba(240,242,246,1);
+}
+
+.body:before {
+    height: 250px;
+    margin-top: -250px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    animation: lid 6s ease-in-out 0s infinite normal none;
+  -webkit-animation: lid 6s ease-in-out 0s infinite normal none;
+}
+
+.body:after {
+    height: 80px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.body .hinge {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: -5px;
+    margin-left: -5px;
+    box-shadow: 0 0 0 2px rgba(28,30,36,0.02) inset;
+}
+
+.light , .light:before , .light:after {
+    content: "";
+    position: absolute;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    -o-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+.lighter {
+    animation: lighter 3s ease-in-out 0s infinite alternate none;
+  -webkit-animation: lighter 3s ease-in-out 0s infinite alternate none;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -70px;
+    width: 30px;
+    height: 45px;
+    z-index: -1;
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    -o-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+.light {
+    opacity: 1;
+    border-bottom: 45px solid rgba(255,255,120,0.8);
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    animation: flicker 0.65s ease-in-out 0s infinite alternate none;
+  -webkit-animation: flicker 0.65s ease-in-out 0s infinite alternate none;
+}
+
+.light:before {
+    border-bottom: 15px solid rgba(155,175,255,0.5);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    bottom: -45px;
+    left: -10px;
+    z-index: 5;
+    animation: flicker 0.35s ease-in-out -0.3s infinite alternate none;
+  -webkit-animation: flicker 0.35s ease-in-out -0.3s infinite alternate none;
+}
+
+.light:after {
+    border-bottom: 30px solid rgba(255,175,155,0.5);
+    border-right: 13px solid transparent;
+    border-left: 13px solid transparent;
+    animation: flicker 0.50s ease-in-out -0.1s infinite alternate none;
+  -webkit-animation: flicker 0.50s ease-in-out -0.1s infinite alternate none;
+    bottom: -45px;
+    left: -13px;
+    z-index: 15;
+}
+
+.tip {
+    position: absolute;
+    width: 100px;
+    border-bottom: 10px solid rgba(230,232,236,1);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    margin-top: -10px;
+    z-index: 5;
+}
+
+.tip:before , .tip:after {
+    position: absolute;
+    content: "";
+}
+
+.tip:before {
+    width: 40px;
+    height: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgba(240,242,246,1);
+    margin-top: -20px;
+    margin-left: -20px;
+    left: 50%;
+}
+
+.tip:after {
+    margin-top: -3px;
+    margin-left: -3px;
+    top: -14px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: rgba(240,255,245,1);
+    box-shadow: -12px 6px rgba(240,255,245,1),
+                12px 6px rgba(240,255,245,1),
+                0px 9px rgba(240,255,245,1);
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border-left: 20px solid rgba(230,232,236,1);
+    border-bottom: 0px solid transparent;
+    border-top: 20px solid transparent;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: 20px;
+}
+
+.spinner:before {
+    background-color: rgba(240,242,246,1);
+    box-shadow: 0 0 0 2px rgba(220,222,226,1) inset;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -20px;
+    top: -10px;
+    left: -5px;
+    position: absolute;
+    content: "";
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.spinner:after {
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(220,222,226,1);
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+@keyframes lid {
+  100% { -webkit-transform: rotate( 0deg ) scale( 1 , 0.25 ); -moz-transform: rotate( 0deg ) scale( 1 , 0.25 ); -ms-transform: rotate( 0deg ) scale( 1 , 0.25 ); -o-transform: rotate( 0deg ) scale( 1 , 0.25 ); transform: rotate( 0deg ) scale( 1 , 0.25 );} 
+  90% { -webkit-transform: rotate( 0deg ) scale( 1 , 0.25 ); -moz-transform: rotate( 0deg ) scale( 1 , 0.25 ); -ms-transform: rotate( 0deg ) scale( 1 , 0.25 ); -o-transform: rotate( 0deg ) scale( 1 , 0.25 ); transform: rotate( 0deg ) scale( 1 , 0.25 );} 
+  87% { -webkit-transform: rotate( -90deg ) scale( 1 , 0.25 ); -moz-transform: rotate( -90deg ) scale( 1 , 0.25 ); -ms-transform: rotate( -90deg ) scale( 1 , 0.25 ); -o-transform: rotate( -90deg ) scale( 1 , 0.25 ); transform: rotate( -90deg ) scale( 1 , 0.25 );} 
+  13% { -webkit-transform: rotate( -90deg ) scale( 1 , 0.25 ); -moz-transform: rotate( -90deg ) scale( 1 , 0.25 ); -ms-transform: rotate( -90deg ) scale( 1 , 0.25 ); -o-transform: rotate( -90deg ) scale( 1 , 0.25 ); transform: rotate( -90deg ) scale( 1 , 0.25 );} 
+  10% { -webkit-transform: rotate( 0deg ) scale( 1 , 0.25 ); -moz-transform: rotate( 0deg ) scale( 1 , 0.25 ); -ms-transform: rotate( 0deg ) scale( 1 , 0.25 ); -o-transform: rotate( 0deg ) scale( 1 , 0.25 ); transform: rotate( 0deg ) scale( 1 , 0.25 );} 
+  0% { -webkit-transform: rotate( 0deg ) scale( 1 , 0.25 ); -moz-transform: rotate( 0deg ) scale( 1 , 0.25 ); -ms-transform: rotate( 0deg ) scale( 1 , 0.25 ); -o-transform: rotate( 0deg ) scale( 1 , 0.25 ); transform: rotate( 0deg ) scale( 1 , 0.25 );} 
+}
+
+@-webkit-keyframes lid {
+  100% { -webkit-transform: rotate( 0deg ) scale( 1 , 0.25 ); -moz-transform: rotate( 0deg ) scale( 1 , 0.25 ); -ms-transform: rotate( 0deg ) scale( 1 , 0.25 ); -o-transform: rotate( 0deg ) scale( 1 , 0.25 ); transform: rotate( 0deg ) scale( 1 , 0.25 );} 
+  90% { -webkit-transform: rotate( 0deg ) scale( 1 , 0.25 ); -moz-transform: rotate( 0deg ) scale( 1 , 0.25 ); -ms-transform: rotate( 0deg ) scale( 1 , 0.25 ); -o-transform: rotate( 0deg ) scale( 1 , 0.25 ); transform: rotate( 0deg ) scale( 1 , 0.25 );} 
+  87% { -webkit-transform: rotate( -90deg ) scale( 1 , 0.25 ); -moz-transform: rotate( -90deg ) scale( 1 , 0.25 ); -ms-transform: rotate( -90deg ) scale( 1 , 0.25 ); -o-transform: rotate( -90deg ) scale( 1 , 0.25 ); transform: rotate( -90deg ) scale( 1 , 0.25 );} 
+  13% { -webkit-transform: rotate( -90deg ) scale( 1 , 0.25 ); -moz-transform: rotate( -90deg ) scale( 1 , 0.25 ); -ms-transform: rotate( -90deg ) scale( 1 , 0.25 ); -o-transform: rotate( -90deg ) scale( 1 , 0.25 ); transform: rotate( -90deg ) scale( 1 , 0.25 );} 
+  10% { -webkit-transform: rotate( 0deg ) scale( 1 , 0.25 ); -moz-transform: rotate( 0deg ) scale( 1 , 0.25 ); -ms-transform: rotate( 0deg ) scale( 1 , 0.25 ); -o-transform: rotate( 0deg ) scale( 1 , 0.25 ); transform: rotate( 0deg ) scale( 1 , 0.25 );} 
+  0% { -webkit-transform: rotate( 0deg ) scale( 1 , 0.25 ); -moz-transform: rotate( 0deg ) scale( 1 , 0.25 ); -ms-transform: rotate( 0deg ) scale( 1 , 0.25 ); -o-transform: rotate( 0deg ) scale( 1 , 0.25 ); transform: rotate( 0deg ) scale( 1 , 0.25 );} 
+}
+
+@keyframes body {
+  100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 
+  25% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 
+  12% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 
+  17% { -webkit-transform: rotate(20deg) translate( 20px , 35px ); -moz-transform: rotate(20deg) translate( 20px , 35px ); -ms-transform: rotate(20deg) translate( 20px , 35px ); -o-transform: rotate(20deg) translate( 20px , 35px ); transform: rotate(20deg) translate( 20px , 35px );} 
+  20% { -webkit-transform: rotate(-30deg) translate( -15px , -35px ); -moz-transform: rotate(-30deg) translate( -15px , -35px ); -ms-transform: rotate(-30deg) translate( -15px , -35px ); -o-transform: rotate(-30deg) translate( -15px , -35px ); transform: rotate(-30deg) translate( -15px , -35px );} 
+  0% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 
+}
+
+@-webkit-keyframes body {
+  100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 
+  25% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 
+  12% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 
+  17% { -webkit-transform: rotate(20deg) translate( 20px , 35px ); -moz-transform: rotate(20deg) translate( 20px , 35px ); -ms-transform: rotate(20deg) translate( 20px , 35px ); -o-transform: rotate(20deg) translate( 20px , 35px ); transform: rotate(20deg) translate( 20px , 35px );} 
+  20% { -webkit-transform: rotate(-30deg) translate( -15px , -35px ); -moz-transform: rotate(-30deg) translate( -15px , -35px ); -ms-transform: rotate(-30deg) translate( -15px , -35px ); -o-transform: rotate(-30deg) translate( -15px , -35px ); transform: rotate(-30deg) translate( -15px , -35px );} 
+  0% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 
+}
+
+@keyframes flicker {
+  100% { -webkit-transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 ); -moz-transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 ); -ms-transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 ); -o-transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 ); transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 );} 
+  84% { -webkit-transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 ); -moz-transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 ); -ms-transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 ); -o-transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 ); transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 );} 
+  58% { -webkit-transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 ); -moz-transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 ); -ms-transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 ); -o-transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 ); transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 );} 
+  36% { -webkit-transform: rotate( -4deg ) skew( 3deg ) scale( 1 ); -moz-transform: rotate( -4deg ) skew( 3deg ) scale( 1 ); -ms-transform: rotate( -4deg ) skew( 3deg ) scale( 1 ); -o-transform: rotate( -4deg ) skew( 3deg ) scale( 1 ); transform: rotate( -4deg ) skew( 3deg ) scale( 1 );} 
+  21% { -webkit-transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 ); -moz-transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 ); -ms-transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 ); -o-transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 ); transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 );} 
+  0% { -webkit-transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 ); -moz-transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 ); -ms-transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 ); -o-transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 ); transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 );} 
+}
+
+@-webkit-keyframes flicker {
+  100% { -webkit-transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 ); -moz-transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 ); -ms-transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 ); -o-transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 ); transform: rotate( 1deg ) skew( -2deg ) scale( 1 , 1 );} 
+  84% { -webkit-transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 ); -moz-transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 ); -ms-transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 ); -o-transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 ); transform: rotate( 2deg ) skew( -2deg ) scale( 0.8 );} 
+  58% { -webkit-transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 ); -moz-transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 ); -ms-transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 ); -o-transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 ); transform: rotate( 6deg ) skew( -3deg ) scale( 0.9 );} 
+  36% { -webkit-transform: rotate( -4deg ) skew( 3deg ) scale( 1 ); -moz-transform: rotate( -4deg ) skew( 3deg ) scale( 1 ); -ms-transform: rotate( -4deg ) skew( 3deg ) scale( 1 ); -o-transform: rotate( -4deg ) skew( 3deg ) scale( 1 ); transform: rotate( -4deg ) skew( 3deg ) scale( 1 );} 
+  21% { -webkit-transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 ); -moz-transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 ); -ms-transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 ); -o-transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 ); transform: rotate( 2deg ) skew( -3deg ) scale( 0.9 );} 
+  0% { -webkit-transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 ); -moz-transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 ); -ms-transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 ); -o-transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 ); transform: rotate( 0deg ) skew( 2deg ) scale( 1 , 1 );} 
+}
+
+@keyframes lighter {
+  100% { -webkit-transform: scale( 1 ) rotate( 0deg ); -moz-transform: scale( 1 ) rotate( 0deg ); -ms-transform: scale( 1 ) rotate( 0deg ); -o-transform: scale( 1 ) rotate( 0deg ); transform: scale( 1 ) rotate( 0deg );} 
+  27% { -webkit-transform: scale( 1 ) rotate( 0deg ); -moz-transform: scale( 1 ) rotate( 0deg ); -ms-transform: scale( 1 ) rotate( 0deg ); -o-transform: scale( 1 ) rotate( 0deg ); transform: scale( 1 ) rotate( 0deg );} 
+  25% { -webkit-transform: scale( 0.7 ) rotate( 30deg ); -moz-transform: scale( 0.7 ) rotate( 30deg ); -ms-transform: scale( 0.7 ) rotate( 30deg ); -o-transform: scale( 0.7 ) rotate( 30deg ); transform: scale( 0.7 ) rotate( 30deg );} 
+  22% { opacity: 1; -webkit-transform: scale( 1.3 ) rotate( -20deg ); -moz-transform: scale( 1.3 ) rotate( -20deg ); -ms-transform: scale( 1.3 ) rotate( -20deg ); -o-transform: scale( 1.3 ) rotate( -20deg ); transform: scale( 1.3 ) rotate( -20deg );} 
+  17% { opacity: 0; -webkit-transform: scale( 0 ) rotate( 0 ); -moz-transform: scale( 0 ) rotate( 0 ); -ms-transform: scale( 0 ) rotate( 0 ); -o-transform: scale( 0 ) rotate( 0 ); transform: scale( 0 ) rotate( 0 );} 
+  0% { opacity: 0; -webkit-transform: scale( 0 ) rotate( 0 ); -moz-transform: scale( 0 ) rotate( 0 ); -ms-transform: scale( 0 ) rotate( 0 ); -o-transform: scale( 0 ) rotate( 0 ); transform: scale( 0 ) rotate( 0 );} 
+}
+
+@-webkit-keyframes lighter {
+  100% { -webkit-transform: scale( 1 ) rotate( 0deg ); -moz-transform: scale( 1 ) rotate( 0deg ); -ms-transform: scale( 1 ) rotate( 0deg ); -o-transform: scale( 1 ) rotate( 0deg ); transform: scale( 1 ) rotate( 0deg );} 
+  27% { -webkit-transform: scale( 1 ) rotate( 0deg ); -moz-transform: scale( 1 ) rotate( 0deg ); -ms-transform: scale( 1 ) rotate( 0deg ); -o-transform: scale( 1 ) rotate( 0deg ); transform: scale( 1 ) rotate( 0deg );} 
+  25% { -webkit-transform: scale( 0.7 ) rotate( 30deg ); -moz-transform: scale( 0.7 ) rotate( 30deg ); -ms-transform: scale( 0.7 ) rotate( 30deg ); -o-transform: scale( 0.7 ) rotate( 30deg ); transform: scale( 0.7 ) rotate( 30deg );} 
+  22% { opacity: 1; -webkit-transform: scale( 1.3 ) rotate( -20deg ); -moz-transform: scale( 1.3 ) rotate( -20deg ); -ms-transform: scale( 1.3 ) rotate( -20deg ); -o-transform: scale( 1.3 ) rotate( -20deg ); transform: scale( 1.3 ) rotate( -20deg );} 
+  17% { opacity: 0; -webkit-transform: scale( 0 ) rotate( 0 ); -moz-transform: scale( 0 ) rotate( 0 ); -ms-transform: scale( 0 ) rotate( 0 ); -o-transform: scale( 0 ) rotate( 0 ); transform: scale( 0 ) rotate( 0 );} 
+  0% { opacity: 0; -webkit-transform: scale( 0 ) rotate( 0 ); -moz-transform: scale( 0 ) rotate( 0 ); -ms-transform: scale( 0 ) rotate( 0 ); -o-transform: scale( 0 ) rotate( 0 ); transform: scale( 0 ) rotate( 0 );} 
+}
 .heading
 {
   font-size: 40px;
@@ -30,8 +353,11 @@ body {
 }
 .error
 {
+  width: 100%;
+  height: 40px;
   color: red;
-  display: none;
+  font-weight: bold;
+  text-align: center;
 }
 .row {
   max-width: 800px;
@@ -61,7 +387,11 @@ body {
   margin: 30px 10px;
 }
 
-
+@media (max-width: 767px) {
+    .navbar {
+        background: #000 !important; /*Add your own background*/
+    }
+}
 
 .swing {
   display: inline-block;
@@ -165,27 +495,199 @@ body {
   display: block;
   width: 300px;
 }
-.btn
-{
-  margin: 1px;
-}
 li
 {
   font-weight: bold;
+  color: #ffffff;
+  
 }
 li:hover
 {
 background-color: #179b77;
 }
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+#preloader 
+{ 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333 
+  no-repeat center center; 
+  background: #a9db80; /* Old browsers */
+background: -moz-linear-gradient(top, #a9db80 40%, #96c56f 70%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a9db80 40%,#96c56f 70%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a9db80 40%,#96c56f 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 );
+
+}
+#content
+{
+  display:none;
+}
 </style>
 <script>
+function init()
+{
+  $('#preloader').delay(2000).fadeOut();
+    $('#content').show();
 
+}
+window.onload=init;
+$(document).ready(function(){    
+	$('input').focus(function(){
+    $('.error').css('color','red');
+		$('.error').text('');
+	});
+});
+function sendRequest()
+	{
+    var nameReg=/^[a-z ,.'-]+$/i;
+		var emailReg=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		var mobileReg=/^\d{10}$/;
+		var semesterReg=/\b\d\b/;
+		var name=$('#Name').val();
+		var email=$('#Email').val();
+		var mobile=$('#Mobile').val();
+		var college=$('#College').val();
+		var branch=$('#Branch').val();
+		var semester=$('#Semester').val();
+		$('.error').text('');
+		if(name=="")
+		{
+			$('.error').text('Enter Name!');
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+		else if(!nameReg.test(name))
+		{
+			$('.error').text('Enter Valid Name!');
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}		
+		if(email=="")
+		{
+			$('.error').text('Enter Email Addres!');
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+		else if(!emailReg.test(email))
+		{
+			$('.error').text('Enter Valid Email Address!')
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+		if(mobile=="")
+		{
+			$('.error').text('Enter Mobile Number!')
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+		else if(!mobileReg.test(mobile))
+		{
+			$('.error').text('Enter Valid Mobile Number!')
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+		if(college=="")
+		{
+			$('.error').text('Enter College Name!')
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+		if(branch=="")
+		{
+			$('.error').text('Enter Complete Branch Name!')
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+		if(semester=="")
+		{
+			$('.error').text('Enter Your Semester!')
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+		else if(!semesterReg.test(semester))
+		{
+			$('.error').text('Enter Number Between 1 to 8!')
+      $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+			return;
+		}
+    $('.submit').attr('disabled','disabled');
+		var ax=new XMLHttpRequest();
+		ax.onreadystatechange=function(){
+			if(this.readyState==4 && this.status==200)
+			{
+        var data=this.responseText;
+        $('.error').css('color','green');
+        $('.error').text(data);
+        $('html, body').animate({
+        'scrollTop':$('.error').position().top
+      });
+        $('.submit').removeAttr('disabled');
+			}
+		};
+		ax.open("GET","addp.php?n="+name+"&e="+email+"&m="+mobile+"&c="+college+"&b="+branch+"&s="+semester,true);
+		ax.send();
+
+	}
 
 </script>  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91080720-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #e3f2fd;">
+<div id="preloader">
+
+<div id="animation">
+    <div class="body">
+        <div class="hinge"></div>
+        <div class="lighter">
+            <div class="light"></div>
+        </div>
+        <div class="tip"></div>
+        <div class="spinner"></div>
+    </div>
+</div>
+</div>
+<div id="content">
+<nav class="navbar navbar-default navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -194,31 +696,38 @@ background-color: #179b77;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></img></a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li><a href="./">Fixed top</a></li>
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li><a href="./">Fixed top</a></li>
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <button class="btn btn-lg btn-primary">Register</button>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav ">
+            <li><a style="font-size: 15px;" href="index.html">Home</a></li>
+            <li><a style="font-size: 15px;" href="about.html">About</a></li>
+            <li><a style="font-size: 15px;" href="events.html">Events</a></li>
+            <li><a style="font-size: 15px;" href="workshop.html">Workshop</a></li>
+            <li><a style="font-size: 15px;" href="technovator.html">Technovator</a></li>
+            <li><a style="font-size: 15px;" href="initiatives.html">Initiatives</a></li>
+            <li><a style="font-size: 15px;" href="sponsors.html">Sponsors</a></li>
+            <li><a style="font-size: 15px;" href="team.html" target="_blank">Team</a></li>
+            
           </ul>
+          <form class="navbar-form navbar-right" action="register.html">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
         </div><!--/.nav-collapse -->
       </div>
     </nav>    
 
           <div class="row">
-          <br>
-          <br>
+          <div class="col-lg-4">
+          </div>
+          <div class="col-lg-4">
   <p class="heading">Register</p>
-  <p class="error">hi error</p>
+  <p class="error"></p>
+  </div>
+  <div class="col-lg-4">
+  </div>
 </div>
-<form>
+<form id="form">
 <div class="row">
   <span>
     <input class="swing" id="Name" type="text" placeholder="Enter your name" /><label for="Name">Name</label>
@@ -227,14 +736,13 @@ background-color: #179b77;
     <input class="swing" id="Email" type="text" placeholder="Enter your email address" /><label for="Email">Email</label>
   </span>
   <span>
-    <input class="swing" id="Mobile" type="text" placeholder="Mobile Number" /><label for="Mobile">Mobile</label>
+    <input class="swing" id="Mobile" type="text" placeholder="10 Digit Mobile Number" /><label for="Mobile">Mobile</label>
   </span>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <span>
     <input class="swing" id="College" type="text" placeholder="Name of College" /><label for="College">College</label>
   </span>
   <span>
-    <input class="swing" id="Branch" type="text" placeholder="Branch Name" /><label for="Branch">Branch</label>
+    <input class="swing" id="Branch" type="text" placeholder="Enter Complete Branch Name" /><label for="Branch">Branch</label>
   </span>
   <span>
     <input class="swing" id="Semester" type="text" placeholder="Semester(1/2/3/4/5/6/7/8)" /><label for="Semester">Semester</label>
@@ -242,12 +750,13 @@ background-color: #179b77;
   <span>
   </span>
   <span>
-  <button class="button button-block">Register</button>
+  <button type="button" onclick="sendRequest()" class="button button-block submit">Register</button>
   </span>
   <span>
   </span>
 </div>
 </form>          
+</div>
 
 </body>
 </html>

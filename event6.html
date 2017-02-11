@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="MechTechMeet, UEC, Ujjain, UECU, Robotics, technical fest, battlefield, robowars, soccer, software, business plan, rubik, cube, tech, college fest,
+  lectures, technology, competitions, events, workshops, exhibitions, science, fest, robotics, delhi, robotics, techfest, college festival, asia's largest, Engineer, mahakal, technovation, Society, cultural, pro night, dj night, dj, march, 3, 4" />
+  <meta name="description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'. It is a place where innovation origins. We provide a platform for technically sound people" />
+    <meta property="og:title" content="MechTechMeet 8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mechtechmeet.org/" />
+  <meta property="og:site_name" content="MechTechMeet 8" />
+  <meta property="og:description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'" />
+  <meta property=og:image content=http://mechtechmeet.org/images/mtm.jpg>
+
+
+  <title>Online Events</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<script src="js/demoad.js"></script>
+<style>
+body
+{
+  background-image: url(images/bg.jpg);
+  background-color: transparent;
+}
+li
+{
+  font-weight: bold;
+  color: #ffffff;
+}
+.hover:hover
+{
+background: #179b77;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+#preloader 
+{ 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333 
+  no-repeat center center; 
+}
+.transition, .accordp, .accordul li i:before, .accordul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, .accordh1, .accordul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, .accordh2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.accordh1 {
+  color: #ff6873;
+}
+.accordh2 {
+  color: #ff6873;
+}
+
+.accordh1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.accordh2 {
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.accordp {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 1200px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  font-weight: normal;
+}
+
+.accordul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accordul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+.accordul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accordul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accordul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accordul li:nth-of-type(4) {
+  animation-delay: 1.25s;
+}
+.accordul li:last-of-type {
+  padding-bottom: 0;
+}
+.accordul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accordul li i:before, .accordul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+.accordul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accordul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accordul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.accordul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accordul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+.pdf
+{
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+  float: right; 
+  text-decoration: none;
+  height: 48px;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: transparent;
+    
+    color: #ffffff;
+    
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+    background: #179b77;
+
+}
+
+</style>
+<script>
+$(document).ready(function(){
+});
+
+</script>  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91080720-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="content">
+<nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></img></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav ">
+            <li class="hover"><a style="font-size: 15px;" href="index.html">Home</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="about.html">About</a></li>
+            
+
+            <li class="dropdown hover">
+          <a href="events.html" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 15px;"> Events</a>
+          <ul class="dropdown-menu">
+            <li><a style="font-size: 15px; font-weight: bold;" href="event1.html">Robo Club</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event2.html">Mech Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event3.html">Mind Stimulators</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event4.html">Computer Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event5.html">SCDC</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event6.html">Online Events</a></li>
+            
+          </ul>
+        </li>
+
+
+            <li class="hover"><a style="font-size: 15px;" href="workshop.html">Workshop</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="technovator.html">Technovator</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="initiatives.html">Initiatives</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="sponsors.html">Sponsors</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="team.html" target="_blank">Team</a></li>
+            
+          </ul>
+          <form class="navbar-form navbar-right" action="register.html">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>    
+    <br>
+    <br><br><br><br>
+<div class="container demo-3">
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8"><h3 style="color: #ff6873; text-align: center;">Are you Ready For The Challenge?</h3><h4 style="color: #ffffff; text-align: center;">Come, be part of the most exciting Tech-Fest in Central India!</h4></div>
+<div class="col-sm-2"><img class="img-responsive pull-right" src="images/stamp.png"></div>
+</div>
+
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">How It's Made<a class="pdf" href="pdf/howitsmade.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">Have you ever wondered how things are made? Each day we use hundreds of products throughout our routine, never stopping to think about where those products came from and how they are manufactured. How it’s made shows you the step by step process of building and creating most common products.
+ <br>
+    <b style="color: #ff6873;">Problem Statement :-</b><br>
+   Select a product from day to day life and make a collage of picture that would show the whole manufacturing process of that item/product. The collage should be descriptive enough to explain the manufacturing process of the product.
+
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1. Prepare a collage of 6 to 8 pictures to describe the manufacturing process of the product and send a message with complete details of you and your institution to the official Facebook page of Mech Tech Meet. The page link is www.facebook.com/mtmuec/   <br>
+2. First picture should contain raw materials and in the last picture there should be a final product.<br>
+3. There is a word limit of 20 words for each picture. And in overall collage a word limit of 100 words.<br>
+4. Use of any kind of auto-liker is strictly prohibited.<br>
+5. One person can make only one collage.
+6. In case a person with more than one collage is found, then both the collage will be rejected.<br>
+7. All the participants of the event must come with their institute’s identity card.<br>
+8. The winner will be disclosed in the award ceremony of the event on 4th march.
+
+
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">1. Prepare a collage for the manufacturing process of the product according to the rules and send it to the link www.facebook.com/mtmuec/   <br>
+2. The evaluation will be on the basis of likes on Facebook as well as on the basis of expert’s review. 50% weightage of likes and 50% weightage of the expert’s Ratings<br>
+3. The expert will rate the post out of 100.<br>
+4. Calculation of points:-<br>
+Total points = expert’s rating + no. of likes<br>
+5. The participant with maximum points will be the winner of the event.
+
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Taher Ali Badshah  +91-9589999455</p>
+  </li>
+</ul>
+</div>
+<div class="col-lg-6">
+     <h1 class="accordh1">Pic-O-Mania<a class="pdf" href="pdf/picomania.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">PIC-O-MANIA is a platform for students to show their skills in photography. Observe the nature around you and capture the moment.
+<br>
+<b style="color: #ff6873;">Problem Statement :-</b><br>
+                                      
+Click a photo of anything, person, or place that shows your photography skills.
+             
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1. Choose the best photo of yours and send in your entries by messaging us on our Facebook page MECH TECH MEET - Official www.facebook.com/mtmuec<br>
+2. Describe your photo in minimum of 40 words.<br>
+3. Only one photo will be posted per participation.<br>
+4. Any participant found using auto liker on their photos will be <b>disqualified</b> immediately. <br>
+5. Photos must be self clicked, or if found not yours, will be subjected to disqualification.
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">Winner will be decided as 50% on the basis of likes and 50% on thebasis of coordinators decision.
+
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Taher Ali Badshah  +91-9589999455</p>
+  </li>
+
+</ul>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+</div>
+</body>
+</html>

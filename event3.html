@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="MechTechMeet, UEC, Ujjain, UECU, Robotics, technical fest, battlefield, robowars, soccer, software, business plan, rubik, cube, tech, college fest,
+  lectures, technology, competitions, events, workshops, exhibitions, science, fest, robotics, delhi, robotics, techfest, college festival, asia's largest, Engineer, mahakal, technovation, Society, cultural, pro night, dj night, dj, march, 3, 4" />
+  <meta name="description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'. It is a place where innovation origins. We provide a platform for technically sound people" />
+    <meta property="og:title" content="MechTechMeet 8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mechtechmeet.org/" />
+  <meta property="og:site_name" content="MechTechMeet 8" />
+  <meta property="og:description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'" />
+  <meta property=og:image content=http://mechtechmeet.org/images/mtm.jpg>
+
+
+  <title>Mind Stimulators</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<script src="js/demoad.js"></script>
+<style>
+body
+{
+  background-image: url(images/bg.jpg);
+  background-color: transparent;
+}
+li
+{
+  font-weight: bold;
+  color: #ffffff;
+}
+.hover:hover
+{
+background: #179b77;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+#preloader 
+{ 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333 
+  no-repeat center center; 
+}
+.transition, .accordp, .accordul li i:before, .accordul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, .accordh1, .accordul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, .accordh2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.accordh1 {
+  color: #ff6873;
+}
+.accordh2 {
+  color: #ff6873;
+}
+
+.accordh1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.accordh2 {
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.accordp {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 1200px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  font-weight: normal;
+}
+
+.accordul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accordul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+.accordul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accordul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accordul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accordul li:nth-of-type(4) {
+  animation-delay: 1.25s;
+}
+.accordul li:last-of-type {
+  padding-bottom: 0;
+}
+.accordul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accordul li i:before, .accordul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+.accordul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accordul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accordul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.accordul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accordul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+.pdf
+{
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+  float: right; 
+  text-decoration: none;
+  height: 48px;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: transparent;
+    
+    color: #ffffff;
+    
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+    background: #179b77;
+
+}
+
+</style>
+<script>
+$(document).ready(function(){
+});
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91080720-1', 'auto');
+  ga('send', 'pageview');
+
+</script>  
+</head>
+
+<body>
+<div id="content">
+<nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></img></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav ">
+            <li class="hover"><a style="font-size: 15px;" href="index.html">Home</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="about.html">About</a></li>
+            
+
+            <li class="dropdown hover">
+          <a href="events.html" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 15px;"> Events</a>
+          <ul class="dropdown-menu">
+            <li><a style="font-size: 15px; font-weight: bold;" href="event1.html">Robo Club</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event2.html">Mech Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event3.html">Mind Stimulators</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event4.html">Computer Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event5.html">SCDC</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event6.html">Online Events</a></li>
+            
+          </ul>
+        </li>
+
+
+            <li class="hover"><a style="font-size: 15px;" href="workshop.html">Workshop</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="technovator.html">Technovator</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="initiatives.html">Initiatives</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="sponsors.html">Sponsors</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="team.html" target="_blank">Team</a></li>
+            
+          </ul>
+          <form class="navbar-form navbar-right" action="register.html">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>    
+    <br>
+    <br><br><br><br>
+<div class="container demo-3">
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8"><h3 style="color: #ff6873; text-align: center;">Are you Ready For The Challenge?</h3><h4 style="color: #ffffff; text-align: center;">Come, be part of the most exciting Tech-Fest in Central India!</h4></div>
+<div class="col-sm-2"><img class="img-responsive pull-right" src="images/stamp.png"></div>
+</div>
+
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">Bridge Designer <a class="pdf" href="pdf/bridging.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">We bring you the annual bridge making competition of Mech Tech Meet that will test your ability to design and construct the most efficient bridge within the given specifications. Your model bridges are intended to be simplified versions of their real world counterparts.<br>
+    <b style="color: #ff6873;">Problem Statement :-</b><br>
+Build a bridge entirely made up of Popsicle sticks with optimum efficiency.
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">
+    1. A team may consist of 4 members at max. Students from different educational institutions are allowed to form a team.<br>
+2. Eligibility: Any student with valid Identity card of their respective institution can participate. All the participants must have a valid ID at the time of competition.<br>
+
+    <b style="color: #ff6873;">Bridge Specification :-</b><br>
+    1. Construct a bridge of length (span) at least 500mm and up to 800 mm using standard Popsicle sticks and adhesives.<br>
+2. The bridge cannot have more than two footings.<br>
+3. Overlap criteria -The structure must be a truss (not a beam), not more than three <br>Popsicle sticks should be overlapped to make a truss member except at the joint.<br>
+4. Footing cannot be created by an overlapping network of sticks.<br>
+5. The width of the bridge at any point shall not be more than 150mm.<br>
+6. Total height of the bridge from footing must not be less than 150mm and must not exceed 300mm.<br>
+7. Loading will be done at the centre of the bridge.<br>
+8. At starting a load of 20 k.g. will be put on your bridge for 30 sec. to check the stability of bridge.<br>
+9. After that, loading will be done with a rate of 5 k.g. /10 sec.<br>
+
+      <b style="color: #ff6873;">Materials :-</b><br>
+      1. The bridge must be constructed only from Popsicle sticks (120mm x 12mm x 2mm) and adhesives (Synthetic white adhesive or single component cyanoacrylate adhesive eg. FEVICOL).<br>
+2. No other materials may be used. The bridge may not be stained, painted or coated in any fashion with any foreign substance.<br>
+3. The Popsicle sticks may be cut or trimmed to any shape or size.<br>
+4. The adhesive can only be used to join Popsicle sticks together; however adhesives cannot be applied on the free surface of the member sticks to increase its strength.
+
+    
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">1. Loading will be done at the centre of the bridge.<br>
+2. All construction and material requirements will be checked prior to testing. Bridges failing to meet these requirements will be disqualified.<br>
+3. Central deflection up to 15 mm is tolerable. Sinking of supports at the end will lead to disqualification.<br>
+4. Loading will be done until the limit of deflection is reached or breaking of truss/ span members occurs.<br>
+5. The bridge with highest structural efficiency (E) will be declared as winner.<br>
+<b>E = load supported in kg/ weight of the bridge in kg.</b>
+6. The top two teams will be awarded.<br>
+7. All the dimensions mentioned are acceptable within an error range of +/- 5%. Any failure in adhering to the specifications will lead to immediate disqualification.<br>
+8. All decisions of the judges shall be final.
+ </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Pratik Soni  +91-8878747717<br>
+Lokesh Jinwal  +91-8224030043<br>
+Lokesh Jindal  +91-8871071807<br>
+</p>
+  </li>
+</ul>
+</div>
+<div class="col-lg-6">
+     <h1 class="accordh1">Elec-Trade<a class="pdf" href="pdf/electrade.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">When technology is given its worth, new levels of marketing are unlocked.
+<br><b style="color: #ff6873;">Problem Statement :-</b><br>
+This is a team event. There should be four member team consisting members of any branch of electrical and electronics field. The team members will be given the basic circuit components i.e. Resistor, inductor, capacitor, diodes etc. by the help of which the team needs to fabricate some of the given circuits.
+
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1) The team should strictly contain 4 members. Students from different colleges may form a team.<br>
+2) The participants are strictly prohibited to carry any sort of electronic gadget or used paper for any of the round.<br>
+3) All the three rounds will have some time limit. The team members may sit together (with proper discipline) for round-1.<br>
+4) The participants can return the unused components at any time and will be refunded the virtual money by paying some fixed penalty.<br>
+5) The decisions will be solely in the hands of coordinating committee. In case of any controversy or dispute the decisions taken by committee members will be applicable. Any team with undisciplined or intolerable behaviour will be strictly disqualified at the moment.
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">The event consists of 3 rounds-<br>
+<b style="color: #ff6873;">Round 1 :-</b><br> The very first round consists of a pen-paper based test. The questions will be related to basic knowledge of electrical and electronics circuits. Every correct answer will give the participating team a definite amount of virtual money. With the help of this money the team can purchase the basic components in the next round. The team should earn a min fixed amount to qualify for the next round.<br>
+<b style="color: #ff6873;">Round 2 :-</b><br> In this round each team will be given a list of basic components with their worth and another list of some circuits with their market price. A team can purchase the basic components and then fabricate the indicated circuits of their choice and sell according to their market price. Top 5 teams with maximum amount of profit i.e. (Investment - Earning) will be shortlisted for finals.<br>
+<b style="color: #ff6873;">Round 3(Finals) :-</b><br>The similar procedure of round 2 will be repeated where teams can purchase components with their earnings and more complex circuits will be provided. Top 3 teams in the final round will be rewarded. 
+
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Mayur Sisodiya  +91-8349633882<br>
+Rinku Dhakad  +91-8349095732<br>
+Nipun Jaiswal  +91-9584232763<br>
+</p>
+  </li>
+
+</ul>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">Chem-e-Car<a class="pdf" href="pdf/chemecar.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">
+    MTM Season 8 presents Chem-E-Car. Grab this opportunity to demonstrate
+your ability to control a chemical reaction, which supplies the necessary fuel
+and use it to propel a car that stops after travelling a specified distance.<br>
+The main objective of the competition is to demonstrate your ability to control a
+chemical reaction. The only source of propulsion of the car is a chemical reaction.
+(Some examples of Chemical Reactions include the use of pressurized air -
+creating oxygen through chemical reaction and allowing it to build up the
+pressure, or application of electrochemical reaction - using electricity generated
+by dissolution of metals/non-metals in acids/bases).<br>
+The aim of the competition is to provide students with an opportunity, in a team
+oriented hands-on design and construction of a small chemically powered car. It
+tests the ability of the participants to safely control and harness the energy of a
+chemical reaction by initiating the car and allowing it to traverse a fixed distance
+carrying a certain load.
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">
+    1. The dimension of robot should not exceed 30x25x20 cm3 (L*B*H), however a
+tolerance of 5% can be considered in any one dimension.<br>
+2. The volume of the beaker used should not exceed 500ml.<br>
+3. The stopping mechanism has to be controlled by a chemical reaction. No
+brakes, mechanical or electronic timing devices are allowed.<br>
+4. Each team consists of maximum four members. Students from different
+educational institutes can form a team.<br>
+5. Transportation of chemicals to the competition venue is strictly the
+responsibility of the team. You are also responsible for arranging disposal of
+chemical wastes generated by your model.<br>
+6. Harmful chemicals (concentrated acid, poisonous gases, etc.) are not allowed,
+your team would be eliminated if chemicals are hazardous and harmful for the
+surroundings. Use decomposable and domestic chemicals such as- Sodium
+Bicarbonate, Acetic acid, iodine, hydrogen, hydrogen-peroxide, starch, potassiumiodide,
+copper, zinc, Aluminium .<br>
+(If u want to use chemicals other than stated above then contact to the
+coordinator)<br>
+7. The decision of the event coordinators would be considered final and no
+further arguments will be entertained
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">
+    The vehicle must be powered by a chemical reaction and must be stopped by a
+quantifiable change, and direct control, of the concentration of a chemical
+species. This chemical reactant species must be a solid, liquid, or vapour. Use of
+commercial batteries or commercial engines is strictly prohibited in your car’s
+system. Ideally, the car should stop after reaching the end of track.<br>
+<b style="color: #ff6873;">Initiating the car :-</b><br> Two
+minutes would be provided for setup of your model. Once the car crosses the
+starting line, team members cannot touch their bot i.e. no chemicals can be
+added. Any type of contact with the car thereafter will lead to disqualification.
+Pushing the vehicle or a mechanical starting device is not allowed (it will lead to
+penalty). If your car is initiated and not moving (i.e. till it has not crossed starting
+line), you can retouch the bot if you are within your time limit of 2 minutes<br>
+<b style="color: #ff6873;">Track details and Judging criteria :-</b><br>
+The exact distance to be traversed would be conveyed to each team two hours
+prior to the start of the performing round. The foremost point of car’s initial and
+final position will be noted down to calculate the distance traversed by the car.
+Final distance will be measured from the finish line. The distance will always be
+measured from the finish line to the front point on the car. A vehicle that goes
+outside the course will have its distance measured to where it went out of bounds
+and accordingly a penalty will be imposed.
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Vaishali Pathak  +91-8982092984<br>
+Subrat Chourasia  +91-8982516133<br>
+Pranav Vyas  +91-8989674282<br>
+</p>
+  </li>
+
+</ul>
+</div>
+<div class="col-lg-6">
+    
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+</div>
+</body>
+</html>

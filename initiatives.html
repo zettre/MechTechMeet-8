@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="keywords" content="MechTechMeet, UEC, Ujjain, UECU, Robotics, technical fest, battlefield, robowars, soccer, software, business plan, rubik, cube, tech, college fest,
+  lectures, technology, competitions, events, workshops, exhibitions, science, fest, robotics, delhi, robotics, techfest, college festival, asia's largest, Engineer, mahakal, technovation, Society, cultural, pro night, dj night, dj, march, 3, 4" />
+  <meta name="description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'. It is a place where innovation origins. We provide a platform for technically sound people" />
+    <meta property="og:title" content="MechTechMeet 8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mechtechmeet.org/" />
+  <meta property="og:site_name" content="MechTechMeet 8" />
+  <meta property="og:description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'" />
+  <meta property=og:image content=http://mechtechmeet.org/images/mtm.jpg>
+
+
+
+
+  <title>Initiatives</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/agency.min.css" rel="stylesheet"> 
+<style>
+body
+{
+  background-image: url(images/bg.jpg);
+}
+.hover:hover
+{
+background-color: #179b77;
+}
+
+#letter {
+    font-size: 120px;
+    font-family: Helvetica;
+    font-weight: Bold;
+    color: rgba(18,22,26,0.7);
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    opacity: 1;
+    z-index: 3;
+}
+
+#description {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    z-index: 100;
+    font-family: Helvetica;
+    font-weight: 200;
+    color: rgba(18,22,26,0.7);
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+.toaster {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -80px;
+    width: 160px;
+    height: 90px;
+    border-radius: 5px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: rgba(235,238,242,1);
+    border-bottom: 8px solid rgba(38,42,46,1);
+    animation: pop 4s ease-in-out 0s infinite normal none;
+  -webkit-animation: pop 4s ease-in-out 0s infinite normal none;
+    z-index: 5;
+}
+
+.toaster:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-top-left-radius: 30px;
+    box-shadow: 4px 4px 0 0 #fff inset;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.toaster:after {
+    content: "";
+    position: absolute;
+    animation: lever 4s ease-in-out 0s infinite normal none;
+  -webkit-animation: lever 4s ease-in-out 0s infinite normal none;
+    background-color: rgba(38,42,46,1);
+    border-bottom-right-radius: 5px;
+    margin-left: 160px;
+    margin-top: 40px;
+    width: 10px;
+    height: 8px;
+}
+
+.toast {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 30px;
+    margin-top: -35px;
+    margin-left: -40px;
+    box-sizing: border-box;
+    border: 2px solid rgba(178,140,115,1);
+    border-top: none;
+    /*background-color: rgba(234,231,210,1);*/
+    background-color: rgba(204,181,140,1);
+}
+
+.toast.one {
+    animation: toastOne 4s ease-in-out 0s infinite normal none;
+  -webkit-animation: toastOne 4s ease-in-out 0s infinite normal none;
+}
+
+.toast.two {
+    margin-left: -5px;
+    animation: toastTwo 4s ease-in-out -0.1s infinite normal none;
+  -webkit-animation: toastTwo 4s ease-in-out -0.1s infinite normal none;    
+}
+
+.toast:before , .toast:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-top: -23px;
+    border: 2px solid rgba(178,140,115,1);
+    background-color: inherit;
+    border-bottom: 2px solid transparent;
+}
+
+.toast:before {
+    margin-left: -4px;
+    border-right: 2px solid transparent;
+    -webkit-transform: rotate(10deg) scale(1.1);
+    z-index: -1;
+}
+
+.toast:after {
+    margin-left: 20px;
+    border-left: 2px solid transparent;
+    -webkit-transform: rotate(-10deg) scale(1.1);
+    z-index: -1;
+}
+
+@keyframes toastOne {
+  87% { -webkit-transform: translate(0px , 0px) rotate( 0deg); -moz-transform: translate(0px , 0px) rotate( 0deg); -ms-transform: translate(0px , 0px) rotate( 0deg); -o-transform: translate(0px , 0px) rotate( 0deg); transform: translate(0px , 0px) rotate( 0deg);} 
+  100% { -webkit-transform: translate(0px , 0px) rotate( 0deg); -moz-transform: translate(0px , 0px) rotate( 0deg); -ms-transform: translate(0px , 0px) rotate( 0deg); -o-transform: translate(0px , 0px) rotate( 0deg); transform: translate(0px , 0px) rotate( 0deg);} 
+  82% { -webkit-transform: translate(0px , 20px) rotate(-60deg); -moz-transform: translate(0px , 20px) rotate(-60deg); -ms-transform: translate(0px , 20px) rotate(-60deg); -o-transform: translate(0px , 20px) rotate(-60deg); transform: translate(0px , 20px) rotate(-60deg);} 
+  76% { -webkit-transform: translate(0px , -150px) rotate(-35deg); -moz-transform: translate(0px , -150px) rotate(-35deg); -ms-transform: translate(0px , -150px) rotate(-35deg); -o-transform: translate(0px , -150px) rotate(-35deg); transform: translate(0px , -150px) rotate(-35deg);} 
+  70% { -webkit-transform: translate(0px , 50px) rotate( 0deg ); -moz-transform: translate(0px , 50px) rotate( 0deg ); -ms-transform: translate(0px , 50px) rotate( 0deg ); -o-transform: translate(0px , 50px) rotate( 0deg ); transform: translate(0px , 50px) rotate( 0deg );} 
+  3% { -webkit-transform: translate(0px , 50px) rotate( 0deg ); -moz-transform: translate(0px , 50px) rotate( 0deg ); -ms-transform: translate(0px , 50px) rotate( 0deg ); -o-transform: translate(0px , 50px) rotate( 0deg ); transform: translate(0px , 50px) rotate( 0deg );} 
+  0% { -webkit-transform: translate(0px , 0px) rotate( 0deg ); -moz-transform: translate(0px , 0px) rotate( 0deg ); -ms-transform: translate(0px , 0px) rotate( 0deg ); -o-transform: translate(0px , 0px) rotate( 0deg ); transform: translate(0px , 0px) rotate( 0deg );} 
+}
+
+@-webkit-keyframes toastOne {
+  87% { -webkit-transform: translate(0px , 0px) rotate( 0deg); -moz-transform: translate(0px , 0px) rotate( 0deg); -ms-transform: translate(0px , 0px) rotate( 0deg); -o-transform: translate(0px , 0px) rotate( 0deg); transform: translate(0px , 0px) rotate( 0deg);} 
+  100% { -webkit-transform: translate(0px , 0px) rotate( 0deg); -moz-transform: translate(0px , 0px) rotate( 0deg); -ms-transform: translate(0px , 0px) rotate( 0deg); -o-transform: translate(0px , 0px) rotate( 0deg); transform: translate(0px , 0px) rotate( 0deg);} 
+  82% { -webkit-transform: translate(0px , 20px) rotate(-60deg); -moz-transform: translate(0px , 20px) rotate(-60deg); -ms-transform: translate(0px , 20px) rotate(-60deg); -o-transform: translate(0px , 20px) rotate(-60deg); transform: translate(0px , 20px) rotate(-60deg);} 
+  76% { -webkit-transform: translate(0px , -150px) rotate(-35deg); -moz-transform: translate(0px , -150px) rotate(-35deg); -ms-transform: translate(0px , -150px) rotate(-35deg); -o-transform: translate(0px , -150px) rotate(-35deg); transform: translate(0px , -150px) rotate(-35deg);} 
+  70% { -webkit-transform: translate(0px , 50px) rotate( 0deg ); -moz-transform: translate(0px , 50px) rotate( 0deg ); -ms-transform: translate(0px , 50px) rotate( 0deg ); -o-transform: translate(0px , 50px) rotate( 0deg ); transform: translate(0px , 50px) rotate( 0deg );} 
+  3% { -webkit-transform: translate(0px , 50px) rotate( 0deg ); -moz-transform: translate(0px , 50px) rotate( 0deg ); -ms-transform: translate(0px , 50px) rotate( 0deg ); -o-transform: translate(0px , 50px) rotate( 0deg ); transform: translate(0px , 50px) rotate( 0deg );} 
+  0% { -webkit-transform: translate(0px , 0px) rotate( 0deg ); -moz-transform: translate(0px , 0px) rotate( 0deg ); -ms-transform: translate(0px , 0px) rotate( 0deg ); -o-transform: translate(0px , 0px) rotate( 0deg ); transform: translate(0px , 0px) rotate( 0deg );} 
+}
+
+@keyframes toastTwo {
+  87% { -webkit-transform: translate(0px , 0px) rotate( 0deg); -moz-transform: translate(0px , 0px) rotate( 0deg); -ms-transform: translate(0px , 0px) rotate( 0deg); -o-transform: translate(0px , 0px) rotate( 0deg); transform: translate(0px , 0px) rotate( 0deg);} 
+  100% { -webkit-transform: translate(0px , 0px) rotate( 0deg); -moz-transform: translate(0px , 0px) rotate( 0deg); -ms-transform: translate(0px , 0px) rotate( 0deg); -o-transform: translate(0px , 0px) rotate( 0deg); transform: translate(0px , 0px) rotate( 0deg);} 
+  82% { -webkit-transform: translate(0px , 20px) rotate(60deg); -moz-transform: translate(0px , 20px) rotate(60deg); -ms-transform: translate(0px , 20px) rotate(60deg); -o-transform: translate(0px , 20px) rotate(60deg); transform: translate(0px , 20px) rotate(60deg);} 
+  76% { -webkit-transform: translate(0px , -130px) rotate(35deg); -moz-transform: translate(0px , -130px) rotate(35deg); -ms-transform: translate(0px , -130px) rotate(35deg); -o-transform: translate(0px , -130px) rotate(35deg); transform: translate(0px , -130px) rotate(35deg);} 
+  70% { -webkit-transform: translate(0px , 50px) rotate( 0deg ); -moz-transform: translate(0px , 50px) rotate( 0deg ); -ms-transform: translate(0px , 50px) rotate( 0deg ); -o-transform: translate(0px , 50px) rotate( 0deg ); transform: translate(0px , 50px) rotate( 0deg );} 
+  3% { -webkit-transform: translate(0px , 50px) rotate( 0deg ); -moz-transform: translate(0px , 50px) rotate( 0deg ); -ms-transform: translate(0px , 50px) rotate( 0deg ); -o-transform: translate(0px , 50px) rotate( 0deg ); transform: translate(0px , 50px) rotate( 0deg );} 
+  0% { -webkit-transform: translate(0px , 0px) rotate( 0deg ); -moz-transform: translate(0px , 0px) rotate( 0deg ); -ms-transform: translate(0px , 0px) rotate( 0deg ); -o-transform: translate(0px , 0px) rotate( 0deg ); transform: translate(0px , 0px) rotate( 0deg );} 
+}
+
+@-webkit-keyframes toastTwo {
+  87% { -webkit-transform: translate(0px , 0px) rotate( 0deg); -moz-transform: translate(0px , 0px) rotate( 0deg); -ms-transform: translate(0px , 0px) rotate( 0deg); -o-transform: translate(0px , 0px) rotate( 0deg); transform: translate(0px , 0px) rotate( 0deg);} 
+  100% { -webkit-transform: translate(0px , 0px) rotate( 0deg); -moz-transform: translate(0px , 0px) rotate( 0deg); -ms-transform: translate(0px , 0px) rotate( 0deg); -o-transform: translate(0px , 0px) rotate( 0deg); transform: translate(0px , 0px) rotate( 0deg);} 
+  82% { -webkit-transform: translate(0px , 20px) rotate(60deg); -moz-transform: translate(0px , 20px) rotate(60deg); -ms-transform: translate(0px , 20px) rotate(60deg); -o-transform: translate(0px , 20px) rotate(60deg); transform: translate(0px , 20px) rotate(60deg);} 
+  76% { -webkit-transform: translate(0px , -130px) rotate(35deg); -moz-transform: translate(0px , -130px) rotate(35deg); -ms-transform: translate(0px , -130px) rotate(35deg); -o-transform: translate(0px , -130px) rotate(35deg); transform: translate(0px , -130px) rotate(35deg);} 
+  70% { -webkit-transform: translate(0px , 50px) rotate( 0deg ); -moz-transform: translate(0px , 50px) rotate( 0deg ); -ms-transform: translate(0px , 50px) rotate( 0deg ); -o-transform: translate(0px , 50px) rotate( 0deg ); transform: translate(0px , 50px) rotate( 0deg );} 
+  3% { -webkit-transform: translate(0px , 50px) rotate( 0deg ); -moz-transform: translate(0px , 50px) rotate( 0deg ); -ms-transform: translate(0px , 50px) rotate( 0deg ); -o-transform: translate(0px , 50px) rotate( 0deg ); transform: translate(0px , 50px) rotate( 0deg );} 
+  0% { -webkit-transform: translate(0px , 0px) rotate( 0deg ); -moz-transform: translate(0px , 0px) rotate( 0deg ); -ms-transform: translate(0px , 0px) rotate( 0deg ); -o-transform: translate(0px , 0px) rotate( 0deg ); transform: translate(0px , 0px) rotate( 0deg );} 
+}
+
+@keyframes lever {
+  6% { -webkit-transform: translate(0px , 20px); -moz-transform: translate(0px , 20px); -ms-transform: translate(0px , 20px); -o-transform: translate(0px , 20px); transform: translate(0px , 20px);} 
+  76% { -webkit-transform: translate(0px , 0px); -moz-transform: translate(0px , 0px); -ms-transform: translate(0px , 0px); -o-transform: translate(0px , 0px); transform: translate(0px , 0px);} 
+  100% { -webkit-transform: translate(0px , 0px); -moz-transform: translate(0px , 0px); -ms-transform: translate(0px , 0px); -o-transform: translate(0px , 0px); transform: translate(0px , 0px);} 
+  73% { -webkit-transform: translate(0px , -8px); -moz-transform: translate(0px , -8px); -ms-transform: translate(0px , -8px); -o-transform: translate(0px , -8px); transform: translate(0px , -8px);} 
+  70% { -webkit-transform: translate(0px , 20px); -moz-transform: translate(0px , 20px); -ms-transform: translate(0px , 20px); -o-transform: translate(0px , 20px); transform: translate(0px , 20px);} 
+  3% { -webkit-transform: translate(0px , 28px); -moz-transform: translate(0px , 28px); -ms-transform: translate(0px , 28px); -o-transform: translate(0px , 28px); transform: translate(0px , 28px);} 
+  0% { -webkit-transform: translate(0px , 0px); -moz-transform: translate(0px , 0px); -ms-transform: translate(0px , 0px); -o-transform: translate(0px , 0px); transform: translate(0px , 0px);} 
+}
+
+@-webkit-keyframes lever {
+  6% { -webkit-transform: translate(0px , 20px); -moz-transform: translate(0px , 20px); -ms-transform: translate(0px , 20px); -o-transform: translate(0px , 20px); transform: translate(0px , 20px);} 
+  76% { -webkit-transform: translate(0px , 0px); -moz-transform: translate(0px , 0px); -ms-transform: translate(0px , 0px); -o-transform: translate(0px , 0px); transform: translate(0px , 0px);} 
+  100% { -webkit-transform: translate(0px , 0px); -moz-transform: translate(0px , 0px); -ms-transform: translate(0px , 0px); -o-transform: translate(0px , 0px); transform: translate(0px , 0px);} 
+  73% { -webkit-transform: translate(0px , -8px); -moz-transform: translate(0px , -8px); -ms-transform: translate(0px , -8px); -o-transform: translate(0px , -8px); transform: translate(0px , -8px);} 
+  70% { -webkit-transform: translate(0px , 20px); -moz-transform: translate(0px , 20px); -ms-transform: translate(0px , 20px); -o-transform: translate(0px , 20px); transform: translate(0px , 20px);} 
+  3% { -webkit-transform: translate(0px , 28px); -moz-transform: translate(0px , 28px); -ms-transform: translate(0px , 28px); -o-transform: translate(0px , 28px); transform: translate(0px , 28px);} 
+  0% { -webkit-transform: translate(0px , 0px); -moz-transform: translate(0px , 0px); -ms-transform: translate(0px , 0px); -o-transform: translate(0px , 0px); transform: translate(0px , 0px);} 
+}
+
+@keyframes pop {
+  75% { -webkit-transform: translate(0px , -15px) rotate(-10deg); -moz-transform: translate(0px , -15px) rotate(-10deg); -ms-transform: translate(0px , -15px) rotate(-10deg); -o-transform: translate(0px , -15px) rotate(-10deg); transform: translate(0px , -15px) rotate(-15deg);} 
+  78% { -webkit-transform: translate(0px , 0px) rotate(0deg); -moz-transform: translate(0px , 0px) rotate(0deg); -ms-transform: translate(0px , 0px) rotate(0deg); -o-transform: translate(0px , 0px) rotate(0deg); transform: translate(0px , 0px) rotate(0deg);} 
+  100% { -webkit-transform: translate(0px , 0px) rotate(0deg); -moz-transform: translate(0px , 0px) rotate(0deg); -ms-transform: translate(0px , 0px) rotate(0deg); -o-transform: translate(0px , 0px) rotate(0deg); transform: translate(0px , 0px) rotate(0deg);} 
+  73% { -webkit-transform: translate(0px , -35px) rotate(5deg); -moz-transform: translate(0px , -35px) rotate(5deg); -ms-transform: translate(0px , -35px) rotate(5deg); -o-transform: translate(0px , -35px) rotate(5deg); transform: translate(0px , -35px) rotate(5deg);} 
+  70% { -webkit-transform: translate(0px , 0px) rotate(0deg); -moz-transform: translate(0px , 0px) rotate(0deg); -ms-transform: translate(0px , 0px) rotate(0deg); -o-transform: translate(0px , 0px) rotate(0deg); transform: translate(0px , 0px) rotate(0deg);} 
+  0% { -webkit-transform: translate(0px , 0px) rotate(0deg); -moz-transform: translate(0px , 0px) rotate(0deg); -ms-transform: translate(0px , 0px) rotate(0deg); -o-transform: translate(0px , 0px) rotate(0deg); transform: translate(0px , 0px) rotate(0deg);} 
+}
+
+@-webkit-keyframes pop {
+  75% { -webkit-transform: translate(0px , -15px) rotate(-10deg); -moz-transform: translate(0px , -15px) rotate(-10deg); -ms-transform: translate(0px , -15px) rotate(-10deg); -o-transform: translate(0px , -15px) rotate(-10deg); transform: translate(0px , -15px) rotate(-15deg);} 
+  78% { -webkit-transform: translate(0px , 0px) rotate(0deg); -moz-transform: translate(0px , 0px) rotate(0deg); -ms-transform: translate(0px , 0px) rotate(0deg); -o-transform: translate(0px , 0px) rotate(0deg); transform: translate(0px , 0px) rotate(0deg);} 
+  100% { -webkit-transform: translate(0px , 0px) rotate(0deg); -moz-transform: translate(0px , 0px) rotate(0deg); -ms-transform: translate(0px , 0px) rotate(0deg); -o-transform: translate(0px , 0px) rotate(0deg); transform: translate(0px , 0px) rotate(0deg);} 
+  73% { -webkit-transform: translate(0px , -35px) rotate(5deg); -moz-transform: translate(0px , -35px) rotate(5deg); -ms-transform: translate(0px , -35px) rotate(5deg); -o-transform: translate(0px , -35px) rotate(5deg); transform: translate(0px , -35px) rotate(5deg);} 
+  70% { -webkit-transform: translate(0px , 0px) rotate(0deg); -moz-transform: translate(0px , 0px) rotate(0deg); -ms-transform: translate(0px , 0px) rotate(0deg); -o-transform: translate(0px , 0px) rotate(0deg); transform: translate(0px , 0px) rotate(0deg);} 
+  0% { -webkit-transform: translate(0px , 0px) rotate(0deg); -moz-transform: translate(0px , 0px) rotate(0deg); -ms-transform: translate(0px , 0px) rotate(0deg); -o-transform: translate(0px , 0px) rotate(0deg); transform: translate(0px , 0px) rotate(0deg);} 
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+#preloader 
+{ 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333 
+  no-repeat center center; 
+  background: #a9db80; /* Old browsers */
+background: -moz-linear-gradient(top, #a9db80 40%, #96c56f 70%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a9db80 40%,#96c56f 70%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a9db80 40%,#96c56f 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 );
+
+}
+#content
+{
+  display:none;
+}
+.nav
+{
+  font-weight: bold;
+}
+.navbar ul li a
+{
+  font-family:'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+</style>
+<script>
+function init()
+{
+    $('#preloader').delay(4000).fadeOut();
+  $('#content').show();
+
+}
+window.onload=init;
+
+</script>  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91080720-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="preloader">
+
+<div id="animation">
+    <div class="toast one"></div>
+    <div class="toast two"></div>
+    <div class="toaster"></div>
+</div>
+</div>
+<div id="content">
+<nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></img></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav ">
+            <li class="hover"><a style="font-size: 15px;" href="index.html">Home</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="about.html">About</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="events.html">Events</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="workshop.html">Workshop</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="technovator.html">Technovator</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="initiatives.html">Initiatives</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="sponsors.html">Sponsors</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="team.html" target="_blank">Team</a></li>
+            
+          </ul>
+          <form class="navbar-form navbar-right" action="register.html">
+                    <button type="submit" class="btn btn-primary" style="color: #fff;
+background-color: #428bca;
+border-color: #357ebd;
+">Register</button>
+                </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>    
+<section id="about">
+        <div class="container">
+        <br><br>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color: white;">Initiatives</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <br>
+            <br><br><br><br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <!--<img class="img-circle img-responsive" src="img/about/1.jpg" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 style="color: #fffaf0"></h4>
+                                    <h4 class="subheading" style="color: #fffaf0">Blood Donation Camp</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted" style="color: #d3d3d3;"><b><i>"Blood is meant to circulate, Pass it around. Donate it to save someone’s life.”</i></b>
+Accidents and medical emergencies don’t take a holiday; we need blood every minute, every day of the year. Our country, on the whole, suffers from a lack of safe blood that can be used for transfusion purposes during medical emergencies. Mech Tech Meet, noticing this urge for a safe blood for medical purpose, is organising a blood donation camp to take little step towards fulfilling this need of the society.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <!--<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4></h4>
+                                    <h4 class="subheading" style="color: #fffaf0">Nirmaan
+</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted" style="color: #d3d3d3;"><b><i>” Education is simply the soul of the society as it passes from one generation to the other”</i></b>
+The Nirmaan initiative is the humble beginning of Mech Tech Meet to orient the school students towards technological advancements and moreover, moulding them into a technologically responsible citizen. The initiative will draw the students out of their textbooks and introduce them to the world of technology, in case they seek to tinker with gadgets and machines.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                               <!-- <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4></h4>
+                                    <h4 class="subheading"style="color: #fffaf0">Sankalp
+</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted" style="color: #d3d3d3;"> Sankalp is the society awareness campaign of Mech Tech Meet, initiated in 2014, to eradicate social evils. The campaign is organised every year at public places to interact with the people and turn their attention towards societal problems in an interesting way. The campaign is based on a highlighting a social issue and the ones covered till now are<b><i> Women empowerment, No Addiction and Brain drain.</i></b></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <!--<img class="img-circle img-responsive" src="img/about/4.jpg" alt="">-->
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4></h4>
+                                    <h4 class="subheading" style="color: #fffaf0">Plantation Drive
+</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted" style="color: #d3d3d3;">Climate change and global warming are the demons emerged as a consequence of rapid and unplanned development of society. Apparently, deforestation is assumed to be the root cause of global warming and planting new trees is looked upon as the ultimate solution to defeat these evils. At Mech Tech Meet we believe in development while making balance with the nature. Plantation drive is one such small step towards turning the society to a greener world. Every year saplings are planted to nurture and grow them into pollution fighting heroes that promise to protect the mankind from extinction. 
+</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>
+</body>
+</html>

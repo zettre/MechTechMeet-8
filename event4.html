@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="MechTechMeet, UEC, Ujjain, UECU, Robotics, technical fest, battlefield, robowars, soccer, software, business plan, rubik, cube, tech, college fest,
+  lectures, technology, competitions, events, workshops, exhibitions, science, fest, robotics, delhi, robotics, techfest, college festival, asia's largest, Engineer, mahakal, technovation, Society, cultural, pro night, dj night, dj, march, 3, 4" />
+  <meta name="description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'. It is a place where innovation origins. We provide a platform for technically sound people" />
+    <meta property="og:title" content="MechTechMeet 8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mechtechmeet.org/" />
+  <meta property="og:site_name" content="MechTechMeet 8" />
+  <meta property="og:description" content="MechTechMeet is the annual Technical festival of Ujjain Engineering College Ujjain to be held from '3rd-4th March 2017'" />
+  <meta property=og:image content=http://mechtechmeet.org/images/mtm.jpg>
+
+
+  <title>Computer Challenge</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<script src="js/demoad.js"></script>
+<style>
+body
+{
+  background-image: url(images/bg.jpg);
+  background-color: transparent;
+}
+li
+{
+  font-weight: bold;
+  color: #ffffff;
+}
+.hover:hover
+{
+background: #179b77;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+#preloader 
+{ 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333 
+  no-repeat center center; 
+}
+.transition, .accordp, .accordul li i:before, .accordul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, .accordh1, .accordul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, .accordh2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.accordh1 {
+  color: #ff6873;
+}
+.accordh2 {
+  color: #ff6873;
+}
+
+.accordh1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.accordh2 {
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.accordp {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 1200px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  font-weight: normal;
+}
+
+.accordul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accordul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+.accordul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accordul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accordul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accordul li:nth-of-type(4) {
+  animation-delay: 1.25s;
+}
+.accordul li:last-of-type {
+  padding-bottom: 0;
+}
+.accordul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accordul li i:before, .accordul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+.accordul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accordul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accordul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.accordul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accordul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+.pdf
+{
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+  float: right; 
+  text-decoration: none;
+  height: 48px;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a, 
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: transparent;
+    
+    color: #ffffff;
+    
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+    background: #179b77;
+
+}
+
+</style>
+<script>
+$(document).ready(function(){
+});
+
+</script>  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91080720-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="content">
+<nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png"></img></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav ">
+            <li class="hover"><a style="font-size: 15px;" href="index.html">Home</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="about.html">About</a></li>
+            
+
+            <li class="dropdown hover">
+          <a href="events.html" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 15px;"> Events</a>
+          <ul class="dropdown-menu">
+            <li><a style="font-size: 15px; font-weight: bold;" href="event1.html">Robo Club</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event2.html">Mech Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event3.html">Mind Stimulators</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event4.html">Computer Challenge</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event5.html">SCDC</a></li>
+            <li><a style="font-size: 15px; font-weight: bold;" href="event6.html">Online Events</a></li>
+            
+          </ul>
+        </li>
+
+
+            <li class="hover"><a style="font-size: 15px;" href="workshop.html">Workshop</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="technovator.html">Technovator</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="initiatives.html">Initiatives</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="sponsors.html">Sponsors</a></li>
+            <li class="hover"><a style="font-size: 15px;" href="team.html" target="_blank">Team</a></li>
+            
+          </ul>
+          <form class="navbar-form navbar-right" action="register.html">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>    
+    <br>
+    <br><br><br><br>
+<div class="container demo-3">
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-8"><h3 style="color: #ff6873; text-align: center;">Are you Ready For The Challenge?</h3><h4 style="color: #ffffff; text-align: center;">Come, be part of the most exciting Tech-Fest in Central India!</h4></div>
+<div class="col-sm-2"><img class="img-responsive pull-right" src="images/stamp.png"></div>
+</div>
+
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">Algo Players <a class="pdf" href="pdf/algoplayers.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">Are you a person who likes to algorithmize tasks?????If
+you thinks of a shortest path while looking a map or think
+to segment tasks in order to reduce your workload then
+algo players is specially for you<br>
+<b style="color: #ff6873;">Problem Statement :-</b><br>
+The problem will be based on real life perception and the
+problem statement will be given on the spot.
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1. Participant will be provided with the real life problem.<br>
+2. They have to write the most optimized algorithm for the problem.<br>
+3. It will be the single round event.<br>
+4. Time given to solve the problem will depend on the problem
+statement given on the spot.
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">It will be the single round programming contest with solo
+participation where each coder whacks his brain to code
+solutions to the given problems.But the most optimized
+algorithm will be selected among all and declared the
+winner.</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Akash Upreti  +91-9530036676<br>
+Anubhav Maheshwari  +91-9179624042<br>
+Harshita Tiwari  +91-9685336446<br>
+</p>
+  </li>
+</ul>
+</div>
+<div class="col-lg-6">
+     <h1 class="accordh1">Blind Coder<a class="pdf" href="pdf/blindcoder.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">
+    Blind Coding is an event in which the programmer will code without
+screens. The programmer will develop a creation without testing it. The
+participant should have blind faith in his/her abilities.It will be a team
+event.<br>
+This event will test your<br>
+1.Programming<br>
+2.Speed<br>
+3.Accuracy<br>
+<b style="color: #ff6873;">Problem Statement :-</b><br>
+The problem will given be given on the spot.
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">
+    1. Firstly the program has to be written on paper.<br>
+2. Then participants have to write code on screen with their monitors
+off.<br>
+3. Each participants from a team have to write code one by one.<br>
+4. The time given for each participant will be decided on the basis of
+problem given<br>
+5. It will be the team event with maximum three persons.<br>
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">
+    1. Team whose code will get executed will be given high preference.<br>
+2. The second preference will be given to the code with less number
+of errors.<br>
+3. In case of tie timing will be considered.
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Aditya Pathak  +91-9424830715<br>
+Himanshi Goyal  +91-9479880644<br>
+Vaidehi Parde  +91-9424039900<br>
+</p>
+  </li>
+
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+          <h1 class="accordh1">Lan Wars <a class="pdf" href="pdf/lanwars.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">Are you a gaming freak??????<br>
+Do you simply love Gaming and Defeating others in
+multiplayer Battles?????<br>
+Here is a chance to fulfill your desire in this LAN
+GAMING BATTLE.<br>
+If you want to compete alone its fine, if you want to
+bring your team its fine too , because we will have
+three gears of battles<br>
+1. Sports Gear<br>
+2. Shooter Gear<br>
+3. Fighter Gear<br>
+In this first two gears will have team battles and the
+last gear will have individual battles.<br>
+<b style="color: #ff6873;">Problem Statement :-</b><br>
+There will be multiplayer lan gaming battles
+conducted under three categories as given in table
+below:<br>
+
+  <b style="color: #ff6873;">Gear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type</b><br>
+Sports Gear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIFA 14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team<br>
+Shooter Gear&nbsp;&nbsp;&nbsp;
+Call of Duty 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Team<br>
+Fight Gear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Mortal Kombat X
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solo<br>
+
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">1. Participants will be provided with laptops and
+consoles to play on.<br>
+2. It will be a multi round event depending on
+number of participations.<br>
+3. The winning criteria will be different for each
+category.<br>
+4. Any type of cheating will not be tolerated and
+will lead to direct disqualification of the whole
+team.<br>
+5. In case of draws there will be tie breakers for
+each category.
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">It will be a multiple round gaming contest with solo
+as well as multiple participation where participants
+will try to defeat there opponents and become the
+champions of the category they have participated in.
+Their will be three winners one from each category.
+The battles will be streamed on a screen through a
+projector for audience.</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">Moiz Rahib  +91-947920110<br>
+Swaraj Patidar  +91-7772873131<br>
+Aditya Vandan  +91-7566665551<br>
+</p>
+  </li>
+</ul>
+</div>
+<div class="col-lg-6">
+     <h1 class="accordh1">Math-o-codo<a class="pdf" href="pdf/mathocodo.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a></h1>
+<ul class="accordul">
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i></i>
+    <h2 class="accordh2">Introduction</h2>
+    <p class="accordp">
+    Are you a programming geek and a Mathematics lover? Do you see everything as
+a number and have passion to unlock mystries? Come test your skills and compete
+with comrades.<br>
+<b style="color: #ff6873;">Problem Statement :-</b><br>
+The problem will be based on Mathematical Expressions and Coding-Decoding of
+Secret Messages.
+</p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Rules</h2>
+    <p class="accordp">
+    1. Event consists of 2 levels.<br>
+2. A team can consist of atmost 2 members.<br>
+3. Participation could be from any college.However,Non- Academic students
+are also welcome to participate.<br>
+4. Winners will be decided on the basis of Accuracy,Consistency and Efficiency.<br>
+5. In case of tie,time will be the deciding factor.<br>
+    </p>
+  </li>
+  <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Gameplay</h2>
+    <p class="accordp">
+    There will be 2 rounds-<br>
+1. Math-ATTACK!!! -evaluating expression into code<br>
+2. Secret-Code - unlock the mystery<br>
+In the first round,students have to deal with different Mathematical
+problems,analyze them and design the code accordingly. In second round , a
+secret code will be provided in which firstly students have to decode it properly
+and then write a generalised code for it.<br>
+    </p>
+  </li>
+    <li class="accordli">
+    <input class="accordinput" type="checkbox" checked>
+    <i class="accordi"></i>
+    <h2 class="accordh2">Contact</h2>
+    <p class="accordp">
+      Amol Singh Thakur  +91-8871063321<br>
+Harshit Soni  +91-8989629687<br>
+    </p>
+    
+  </li>
+
+</ul>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+</div>
+</body>
+</html>
